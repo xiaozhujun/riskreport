@@ -1,0 +1,17 @@
+#reportContent
+{
+   width: 100%;
+    float:left;
+}
+
+#reportLeft
+{
+   width: 20%;
+   float: left;
+}
+
+#reportRight
+{
+    width: 80%;
+    float:right;
+}

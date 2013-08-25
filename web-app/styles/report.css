@@ -6,12 +6,12 @@
 
 #reportLeft
 {
-   width: 20%;
+   width: 15%;
    float: left;
 }
 
 #reportRight
 {
-    width: 80%;
+    width: 85%;
     float:right;
 }

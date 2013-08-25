@@ -6,27 +6,28 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Insert title here</title>
-<link rel="stylesheet" href="styles/head.css" type="text/css">
-<link href="styles/tundra.css"
-	type="text/css" rel="stylesheet" />
-<link href="styles/standard1.css" media="screen"
-	type="text/css" rel="stylesheet" />
+<%--<link rel="stylesheet" href="styles/head.css" type="text/css">--%>
+<%--<link href="styles/tundra.css"
+	type="text/css" rel="stylesheet" />--%>
+<%--<link href="styles/standard1.css" media="screen"
+	type="text/css" rel="stylesheet" />--%>
 <link href="images/favicon.ico" rel="SHORTCUT ICON" />
+   <%-- <link href="styles/head.css" rel="stylesheet" />--%>
+    <%--<link href="css/main.css" rel="stylesheet" />--%>
+    <%--<link href="css/layout.css" rel="stylesheet" />--%>
+    <link href="css/menu.css" rel="stylesheet" />
+   <%-- <link href="css/mobile.css" rel="stylesheet" />--%>
 <style type="text/css">
-#nav {
-	background-color: highlight;
-	width: 100%;
-	margin-top: 2px;
-}
+
 
 a:LINK {
-	color: white;
+	/*color: white;*/
 	font-size: 15px;
 }
 </style>
 </head>
 <body>
-	<div id="main">
+	<%--<div id="main">
 		<div  id="menu">
 			<ul id="_menu">
 				<li id="c_report"><h2>历史记录管理</h2>
@@ -57,7 +58,19 @@ a:LINK {
 					</ul></li>
 			</ul>
 		</div>
-		</div>
+		</div>--%>
+    <div id="container">
+        <div id="menuContainer">
+            <div class="menuFunc">
+                <div class="menuFuncName">报表管理</div>
+                <div class="menuItemList">
+                    <div class="menuItem"><span id="d1"><a href="../riskreport/reportShowHtml.jsp">报表查询</a></span></div>
+                </div>
+            </div>
+        </div>
+        <div id="mainContainer"><g:layoutBody/></div>
+    </div>
+
 		
 </body>
 </html>

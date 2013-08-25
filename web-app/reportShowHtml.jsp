@@ -10,6 +10,8 @@
 <head>
     <title></title>
     <link rel="stylesheet" href="styles/report.css" type="text/css">
+    <% String path = request.getContextPath();
+        String basePase = request.getScheme()+"://"+request.getServerName()+":"+request.getServerPort()+path+"/";%>
 </head>
 <body>
     <jsp:include page="nav.jsp"></jsp:include>
@@ -18,6 +20,7 @@
             <jsp:include page="leftusermenu.jsp"></jsp:include>
         </div>
         <div id="reportRight">
+            <div style="margin-left: 950px;cursor: pointer;" class="tabItem"><a style="text-decoration: none;" href="<%=basePase%>riskreport.jsp">导出文件</a></div>
             <jsp:include page="reportHtml.jsp"></jsp:include>
         </div>
     </div>

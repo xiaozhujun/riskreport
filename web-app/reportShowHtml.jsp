@@ -9,11 +9,17 @@
 <html>
 <head>
     <title></title>
+    <link rel="stylesheet" href="styles/report.css" type="text/css">
 </head>
 <body>
-<jsp:include page="reportHtml.jsp"></jsp:include>
     <jsp:include page="nav.jsp"></jsp:include>
-    <jsp:include page="leftusermenu.jsp"></jsp:include>
-
+    <div id="reportContent">
+        <div id="reportLeft">
+            <jsp:include page="leftusermenu.jsp"></jsp:include>
+        </div>
+        <div id="reportRight">
+            <jsp:include page="reportHtml.jsp"></jsp:include>
+        </div>
+    </div>
 </body>
 </html>

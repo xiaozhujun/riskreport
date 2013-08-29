@@ -17,10 +17,10 @@
     <jsp:include page="nav.jsp"></jsp:include>
     <div id="reportContent">
         <div id="reportLeft">
-            <jsp:include page="leftusermenu.jsp"></jsp:include>
+            <jsp:include page="TreeMenu.jsp"></jsp:include>
         </div>
         <div id="reportRight">
-            <div style="margin-left: 950px;cursor: pointer;" class="tabItem"><a style="text-decoration: none;" href="<%=basePase%>riskreport.jsp">导出文件</a></div>
+            <div style="margin-left: 950px;cursor: pointer;" class="tabItem"><a style="text-decoration: none;" href="<%=basePase%>riskreport.jsp">导出报表</a></div>
             <jsp:include page="reportHtml.jsp"></jsp:include>
         </div>
     </div>

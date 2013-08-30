@@ -150,5 +150,23 @@
     display:inline-block;
     text-align: center;
 }
+#left{
+    width: 385px;
+    float: left;
+    height: 1200px;
+    border: 1px solid #999999;
+    margin-top: 5px;
+    overflow: auto;
+}
+#content{
+    /* background-color: red;*/
+    width: 930px;
+    float:left;
+    margin-top: 5px;
+    margin-left: 5px;
+    height: 1200px;
+    overflow: auto;
+    border: 1px solid #999999;
 
+}
 

@@ -20,7 +20,7 @@
 
                 return false;
             }).css('cursor','pointer').click();
-            $('li:not(:has(ul))').css({cursor:'default','list-style-image':'none'});
+            $('li:not(:has(ul))').css({cursor:'pointer','list-style-image':'none'});
 
             /* 跳转功能*/
             $(".menjiali").click(function(event){
@@ -54,10 +54,10 @@
     <style>
         body{
             font-size: 20px;
+            margin: 0px;
         }
         ul li{
             list-style: none;
-
         }
         li{
             list-style-image: url('images/plus.gif');
@@ -67,6 +67,7 @@
             width: 385px;
 
         }
+
     </style>
 </head>
 

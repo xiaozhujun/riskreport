@@ -7,7 +7,7 @@ class UrlMappings {
 			}
 		}
 
-        "/"(view:"/user")
+        "/"(view:"/realtimeforecast.jsp")
         "/admin"(view:"/admin")
         "500"(view:'/error')
         "/index"(view:"/index")

@@ -28,12 +28,13 @@ a:LINK {
     </div>
     <div id='mainHeadDiv'>
     	<div id='headTab' class='tabs'>
-		    <div class='tabItem' url="integrateManagement.html">港机信息可视化</div>  
-		    <div class='tabItem' onclick="location.href='/riskreport/'">港机智能点检</div>
-		    <div class='tabItem mainselected' url="mechanismForcast/health-forecast.html">机构健康监测</div>
-		    <div class='tabItem ' url="structForcast/health-forecast.html">结构健康监测</div>
+		    <div class='tabItem' url="integrateManagement.html">港机信息可视化</div>
+		    <div class='tabItem' onclick="location.href='/inspect'">港机智能点检</div>
+            <div class='tabItem'>港机润滑管理</div>
+		    <div class='tabItem'  onclick="location.href='/main.html?devName=门机#01'">机构健康监测</div>
+		    <div class='tabItem '>结构健康监测</div>
 		    <div class='tabItem' url="electricalForcast/health-forecast.html">电气健康监测</div>
-		    <div class='tabItem' url="health-forecast.html">健康趋势预报</div>
+            <div class='tabItem mainselected' onclick="location.href='/riskreport/'">健康诊断预报</div>
 		    <div class='tabItem' url="risk-management.html">动态风险评估</div>
 		 </div>
   	</div>

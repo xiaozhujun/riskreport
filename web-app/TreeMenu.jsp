@@ -9,6 +9,9 @@
     <script src="js/jquery-1.4.2.js"></script>
     <script>
         $(function(){
+
+            $("#content").load("menjia.jsp");
+
             $('li:has(ul)').click(function(event){
                 if(this==event.target){
                     if($(this).children().is(':hidden')){
@@ -49,6 +52,8 @@
             $(".generatereport").click(function(){
                 $("#content").load("reportHtml.jsp");
             })
+
+            $('li:has(ul)').css('list-style-image','url(images/minus.gif)').children().show();
         });
     </script>
     <style>
@@ -73,49 +78,48 @@
 
 <body>
 <ul>
-    <li>健康实时预报
+    <li>健康诊断预报
         <ul>
             <li>主要结构
                 <ul>
                     <li class="menjiali">门架机构
-                        <ul>
+                        <%--<ul>
                             <li class="menjia1">圆筒</li>
                             <li class="menjia1">横梁</li>
                             <li class="menjia1">端梁</li>
-                        </ul>
+                        </ul>--%>
                     </li>
 
 
             <li class="bijia">臂架系统
-                <ul>
+               <%-- <ul>
                     <li>象鼻梁</li>
                     <li>大拉杆</li>
                     <li>臂架</li>
-                </ul>
+                </ul>--%>
 
             </li>
             <li class="shangzhuanzhuli">上转柱
-                <ul>
+               <%-- <ul>
                     <li>立柱上段</li>
                     <li>立柱下段</li>
-                </ul>
+                </ul>--%>
 
             </li>
             <li>平衡系统
-                <ul>
+                <%--<ul>
                     <li>平衡梁</li>
                     <li>小拉杆</li>
-                </ul>
+                </ul>--%>
 
 
             </li>
-            <li>转台总成</li>
         </ul>
     </li>
     <li>主要机构
         <ul>
             <li class="qisheng">起升机构
-                <ul>
+                <%--<ul>
                     <li>驱动装置
                         <ul>
                             <li>电动机</li>
@@ -140,10 +144,10 @@
 
 
                     </li>
-                </ul>
+                </ul>--%>
             </li>
             <li class="huizhuan">回转机构
-                <ul>
+               <%-- <ul>
                     <li>支承装置</li>
                     <li>驱动装置
                         <ul>
@@ -195,11 +199,11 @@
                         </ul>
                     </li>
                     <li>防风系缆</li>
-                </ul>
+                </ul>--%>
 
             </li>
             <li class="bianfu">变幅机构
-                <ul>
+                <%--<ul>
                     <li>驱动装置
                         <ul>
                             <li>电动机</li>
@@ -214,13 +218,13 @@
 
                     </li>
 
-                </ul>
+                </ul> --%>
 
             </li>
         </ul>
     </li>
 </ul>
-<li class="generatereport">生成报告</li>
+<li class="generatereport">健康诊断报告</li>
 </ul>
 </body>
 </html>

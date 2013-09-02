@@ -20,7 +20,7 @@
             <jsp:include page="TreeMenu.jsp"></jsp:include>
         </div>
         <div id="reportRight">
-            <div style="margin-left: 950px;cursor: pointer;" class="tabItem"><a style="text-decoration: none;" href="<%=basePase%>riskreport.jsp">导出报表</a></div>
+            <div style="margin-left: 950px;cursor: pointer;margin-top:2px;" class="tabItem"><a style="text-decoration: none;" href="<%=basePase%>riskreport.jsp">导出报表</a></div>
             <jsp:include page="reportHtml.jsp"></jsp:include>
         </div>
     </div>

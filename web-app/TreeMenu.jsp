@@ -4,14 +4,18 @@
 <head>
     <meta http-equiv="content-type" content="text/html" />
     <meta name="author" content="ThinkPad" />
-
+    <meta http-equiv="pragma" content="no-cache">
+    <meta http-equiv="cache-control" content="no-cache">
+    <meta http-equiv="expires" content="0">
     <title>Tree</title>
     <script src="js/jquery-1.4.2.js"></script>
+    <script type="text/javascript" src="My97DatePicker/WdatePicker.js"></script>
+    <script type="text/javascript" src="js/DateDiff.js"></script>
     <script>
         $(function(){
-
-            $("#content").load("menjia.jsp");
-
+            $.ajaxSetup ({
+                cache: false //关闭AJAX相应的缓存
+            });
             $('li:has(ul)').click(function(event){
                 if(this==event.target){
                     if($(this).children().is(':hidden')){
@@ -52,8 +56,21 @@
             $(".generatereport").click(function(){
                 $("#content").load("reportHtml.jsp");
             })
-
-            $('li:has(ul)').css('list-style-image','url(images/minus.gif)').children().show();
+            $(".deviceCount").click(function(){
+                $("#content").load("deviceCount.jsp");
+            })
+            $(".peopleCount").click(function(){
+                $("#content").load("peopleCount.jsp");
+            })
+            $(".deviceInfo").click(function(){
+                $("#content").load("deviceInfo.jsp");
+            })
+            $(".peopleInfo").click(function(){
+                $("#content").load("peopleInfo.jsp");
+            })
+            $(".history").click(function(){
+                $("#content").load("deviceHistory.jsp");
+            })
         });
     </script>
     <style>
@@ -78,54 +95,54 @@
 
 <body>
 <ul>
-    <li>健康诊断预报
+    <li>健康实时预报
         <ul>
             <li>主要结构
                 <ul>
                     <li class="menjiali">门架机构
-                        <%--<ul>
+                        <ul>
                             <li class="menjia1">圆筒</li>
                             <li class="menjia1">横梁</li>
                             <li class="menjia1">端梁</li>
-                        </ul>--%>
+                        </ul>
                     </li>
 
 
             <li class="bijia">臂架系统
-               <%-- <ul>
+                <ul>
                     <li>象鼻梁</li>
                     <li>大拉杆</li>
                     <li>臂架</li>
-                </ul>--%>
+                </ul>
 
             </li>
             <li class="shangzhuanzhuli">上转柱
-               <%-- <ul>
+                <ul>
                     <li>立柱上段</li>
                     <li>立柱下段</li>
-                </ul>--%>
+                </ul>
 
             </li>
             <li>平衡系统
-                <%--<ul>
+                <ul>
                     <li>平衡梁</li>
                     <li>小拉杆</li>
-                </ul>--%>
+                </ul>
 
 
             </li>
+            <li>转台总成</li>
         </ul>
     </li>
     <li>主要机构
         <ul>
             <li class="qisheng">起升机构
-                <%--<ul>
+                <ul>
                     <li>驱动装置
                         <ul>
                             <li>电动机</li>
                             <li>制动器</li>
                             <li>减速器</li>
-                            <li>带制动盘鼓形齿式联轴器</li>
                             <li>高速轴联轴器</li>
                         </ul>
                     </li>
@@ -144,17 +161,16 @@
 
 
                     </li>
-                </ul>--%>
+                </ul>
             </li>
             <li class="huizhuan">回转机构
-               <%-- <ul>
+                <ul>
                     <li>支承装置</li>
                     <li>驱动装置
                         <ul>
                             <li>电动机</li>
                             <li>制动器</li>
                             <li>减速器</li>
-                            <li>锥盘式极限力矩联轴节</li>
                         </ul>
                     </li>
                     <li>安全保护装置
@@ -185,46 +201,44 @@
                         </ul>
                     </li>
                     <li>驱动装置
-                        <ul>
-                            <li>三合一减速器</li>
-                        </ul>
+
 
                     </li>
                     <li>安全保护装置
                         <ul>
-                            <li>电缆卷绕系统</li>
                             <li>锚定装置</li>
                             <li>电动防跑器</li>
                             <li>缓冲器</li>
                         </ul>
                     </li>
                     <li>防风系缆</li>
-                </ul>--%>
+                </ul>
 
             </li>
             <li class="bianfu">变幅机构
-                <%--<ul>
+                <ul>
                     <li>驱动装置
                         <ul>
                             <li>电动机</li>
-                            <li>电力液压块式制动器</li>
                             <li>减速器</li>
-                            <li>高速轴齿形联轴器</li>
-                            <li>带制轮齿形联轴节</li>
-                            <li>低速轴齿形联轴节</li>
                             <li>摇架装配</li>
                             <li>齿条总成</li>
                         </ul>
 
                     </li>
 
-                </ul> --%>
+                </ul>
 
             </li>
         </ul>
     </li>
 </ul>
-<li class="generatereport">健康诊断报告</li>
+<li class="generatereport">生成报告</li>
+<li class="deviceCount">设备异常总数</li>
+<li class="deviceInfo">设备异常明细</li>
+<li class="peopleCount">人员点检异常总数</li>
+<li class="peopleInfo">人员点检异常明细</li>
+<li class="history">设备异常趋势分析</li>
 </ul>
 </body>
 </html>

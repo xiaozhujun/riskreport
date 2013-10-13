@@ -1,16 +1,17 @@
 #main{
-
-         width: 900px;
+       background-color: #EEEEEE;
+         width: 980px;
       height: 1000px;
     margin-top: 2px;
-    margin-left: 20px;
+    margin-left: 10px;
+    overflow: auto;
     /*border: 2px solid gray;*/
 }
 .title{
     background-color: #999999;
 
     height: 30px;
-    width: 900px;
+    width: 980px;
 }
 .title-font{
 
@@ -151,7 +152,7 @@
     text-align: center;
 }
 #left{
-    width: 385px;
+    width: 325px;
     float: left;
     height: 1200px;
     border: 1px solid #999999;
@@ -160,7 +161,7 @@
 }
 #content{
     /* background-color: red;*/
-    width: 930px;
+    width: 1000px;
     float:left;
     margin-top: 5px;
     margin-left: 5px;

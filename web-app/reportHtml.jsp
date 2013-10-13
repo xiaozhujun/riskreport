@@ -8,7 +8,7 @@
           String basePase = request.getScheme()+"://"+request.getServerName()+":"+request.getServerPort()+path+"/";%>
   </head>
 <body>
-<div style="margin-left: 800px;cursor: pointer;margin-top:2px;" class="tabItem"><a style="text-decoration: none;" href="<%=basePase%>riskreport.jsp">导出报告</a></div>
+<div style="margin-left: 800px;cursor: pointer;" class="tabItem"><a style="text-decoration: none;" href="<%=basePase%>riskreport.jsp">导出报告</a></div>
 <%
     String reportTemplate = this.getServletConfig().getServletContext().getRealPath(
             "/report/RiskReportTemplate.jasper");

@@ -68,16 +68,6 @@
         <servlet-name>gsp</servlet-name>
         <url-pattern>*.gsp</url-pattern>
     </servlet-mapping>
-    <servlet>
-        <servlet-name>JasperReportImageServlet</servlet-name>
-        <servlet-class>
-            net.sf.jasperreports.j2ee.servlets.ImageServlet
-        </servlet-class>
-    </servlet>
-    <servlet-mapping>
-        <servlet-name>JasperReportImageServlet</servlet-name>
-        <url-pattern>/image</url-pattern>
-    </servlet-mapping>
     <session-config>
         <!-- 30 minutes -->
         <session-timeout>30</session-timeout>

@@ -56,21 +56,6 @@
             $(".generatereport").click(function(){
                 $("#content").load("reportHtml.jsp");
             })
-            $(".deviceCount").click(function(){
-                $("#content").load("deviceCount.jsp");
-            })
-            $(".peopleCount").click(function(){
-                $("#content").load("peopleCount.jsp");
-            })
-            $(".deviceInfo").click(function(){
-                $("#content").load("deviceInfo.jsp");
-            })
-            $(".peopleInfo").click(function(){
-                $("#content").load("peopleInfo.jsp");
-            })
-            $(".history").click(function(){
-                $("#content").load("deviceHistory.jsp");
-            })
         });
     </script>
     <style>
@@ -234,11 +219,6 @@
     </li>
 </ul>
 <li class="generatereport">生成报告</li>
-<li class="deviceCount">设备异常总数</li>
-<li class="deviceInfo">设备异常明细</li>
-<li class="peopleCount">人员点检异常总数</li>
-<li class="peopleInfo">人员点检异常明细</li>
-<li class="history">设备异常趋势分析</li>
 </ul>
 </body>
 </html>

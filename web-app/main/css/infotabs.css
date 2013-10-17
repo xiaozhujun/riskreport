@@ -1,0 +1,30 @@
+.infoTab
+{
+	border-bottom: 1px solid #FFFFFF;
+    cursor: pointer;
+    display: block;
+    float: left;
+    height: 28px;
+    line-height: 1.5;
+    list-style: none outside none;
+    text-align: center;
+    width: 49.7%;
+    background-color: #ddd;
+    margin-left: 1px;
+    font-weight: 900;
+}
+
+#modelTitleDiv .infoTab
+{
+    width: 100%;
+}
+
+.infoTab:HOVER
+{
+    background-color: #9cf;
+}
+
+.currentInfoTab
+{
+	background-color: #69c;
+}

@@ -1,0 +1,187 @@
+#rmBodyDiv
+{
+	background-color: #ccc;
+}
+
+#rmLeftDiv
+{
+	float: left;
+	width: 80%;
+}
+
+#rmRightDiv
+{
+	float: left;
+	width: 20%;
+}
+
+#queryContainerDiv
+{
+	width: 100%;
+	padding:0;
+	float: left;
+	min-height: 50px;
+}
+
+#queryDiv
+{
+	position: relative;
+	left: 0;
+	top: 0;
+	min-height: 85px;
+	border-style: solid;
+	border-color: #ccc;
+	border-width: 1px;
+	margin-bottom: 10px;
+	margin-right: 5px;
+}
+
+#queryDiv div
+{
+	float: left;
+	display: inline;
+	margin: 8px;
+}
+
+#operationDiv
+{
+	border-style: solid;
+	border-color: #ccc;
+	border-width: 1px;
+	margin-bottom: 5px;
+	margin-left: 5px;
+
+}
+
+#operationDiv button
+{
+	display: block;
+	width: 200;
+	height: 45;
+	margin: 10;
+}
+
+#operationDiv li button
+{
+	padding: 10px;
+	margin-left: 25px;
+	margin-top: 5px;
+}
+
+#sortContainerDiv
+{
+	float: left;
+	width: 100%;
+	padding: 0;
+	min-height: 50px;
+}
+
+#sortDiv
+{
+	min-height: 40px;
+	border-style: solid;
+	border-color: #ccc;
+	border-width: 1px;
+	margin-top: 10px;
+	margin-bottom: 5px;
+	margin-right: 5px;
+	padding: 15px;
+}
+
+#sortDiv input
+{
+	margin-left: 10px;
+	margin-right: 10px;
+	text-align: left;
+}
+
+#tableDiv
+{
+	float: left;
+	width: 100%;
+	border-style: solid;
+	border-color: #ccc;
+	border-width: 1px;
+	min-height: 60%;
+}
+
+#tableHeaderDiv 
+{
+	float: left;
+	margin: 0;
+	padding: 0;
+}
+
+#tableBodyDiv 
+{
+	float: left;
+	margin: 0;
+	padding: 0;
+}
+
+.tableRowDiv
+{
+	float: left;
+	width: 100%;
+}
+
+.tableRowDetailDiv
+{
+	float: left;
+	width: 100%;
+	display: none;
+}
+
+div .showFirst
+{
+	display: block;
+}
+
+.rowDiv
+{
+	float: left;
+	width: 100%;
+	padding: 0;
+	font-size: 14px;
+	color: #666;
+	margin-left: 2em;
+}
+
+.tableColumn
+{
+	border-style: ridge;
+	float: left;
+	border: solid 1px #000;
+	width: 154.3;
+	margin-right: -1;
+	margin-bottom: -1;
+	padding-left: 1em;
+	display: block;
+	line-height: 25px;
+	height: 25px;
+	word-wrap:break-word; overflow:hidden;
+
+}
+
+#tableHeaderDiv .tableColumn
+{
+	background-color: #ccc
+}
+.tableRowMainDiv
+{
+	cursor: pointer;
+}
+.rowDiv .tableColumn
+{
+	width: 215;
+	border-color: #666;
+}
+.tooltip
+{
+	padding: 0 1em 0 1em; 
+	line-height: 1.5;
+	font-size: 13.5;
+	color: #666;
+	width: 200;
+	font-family: "宋体";
+}

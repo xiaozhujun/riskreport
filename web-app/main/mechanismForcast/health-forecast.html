@@ -1,0 +1,106 @@
+<link rel="stylesheet" type="text/css" href="main/css/infotabs.css">
+<script type="text/javascript">
+  $(document).ready(function(){
+    shownId="xingchengmao1";
+    scope="qisheng";
+    domain="mechanism";
+    // $("#faultTreeContainer").hide();
+    $("#monitorForcastContainer").show();
+    // $("#diagnosisContent").load("mechanism/qisheng/diagnosis.html");
+    $('#navDiv').load('main/mechanismForcast/left.html',function(){
+   		$("#zd000001").trigger("click");
+    });
+    $('#mainTab .tabItem').click(function(){
+    	$(".containerselected").removeClass("containerselected");
+    	$(this).addClass("containerselected");
+      $("#"+$(this).attr("url")).show().siblings().hide();
+    });
+		$(".infoTab").mouseover(function(){
+			$(".currentInfoTab").removeClass("currentInfoTab");
+			$(this).addClass("currentInfoTab");
+			$("."+$(this).attr("cref")).show().siblings().hide();
+		});
+  });
+</script>
+<div id='navDiv'></div>
+<div id='contentDiv'><!-- 
+	<div id='faultTreeContainer'>
+		<div id='faultTreeContent'></div>
+	</div> -->
+
+	<div id='monitorForcastContainer'>
+		<div id='diagnosisDiv'>
+			<div id='diagnosisContent'>
+				<div class="canvasDiv">
+					<div id="graphTitle" class="failureTitle">FFT频谱图(根据选择改变)<img src="main/assets/toggle/green.png"></div>
+					<canvas id="graphContent" width="650" height="300">[No canvas support]</canvas>
+					<div class="detectLink"><a href="">检测</a></div>
+				</div>
+                <div class="selectPane">
+                    <div class="controlPane"><span class="F">控<br>制<br>面<br>板</span></div>
+                    <div class="selectContent">
+                        <div class="danxuan">
+                            <span class="d1"><input type="radio">在线分析 </span>
+                            <span class="d1"><input type="radio">离线分析 </span>
+                        </div>
+                        <div class="xiala">
+                            <span class="s1">
+                            <select>
+                                  <option>参数设置</option>
+                                  <option>减速机参数</option>
+                                  <option>传感器参数</option>
+                                  <option>采样频率</option>
+                                  <option>........</option>
+                            </select>
+                            </span>
+                            <span class="s1">
+                            <select>
+                                <option>选择文件</option>
+                                <option>打开*</option>
+                                <option>保存*</option>
+                                <option>另存为*</option>
+                            </select>
+                            </span>
+                            <span class="s1">
+                            <select>
+                                <option>分析方法</option>
+                                <option>信号波形</option>
+                                <option>频谱图</option>
+                                <option>统计量分析</option>
+                                <option>自相关分析</option>
+                                <option>波德图</option>
+                                <option>解调图</option>
+                                <option>趋势图</option>
+                            </select>
+                            </span>
+                            <span class="s1">
+                            <select>
+                                <option>时间范围</option>
+                                <option>0~6s</option>
+                                <option>0~1min</option>
+                                <option>0~1h</option>
+                                <option>0~1day</option>
+                                <option>.......</option>
+                            </select>
+                            </span>
+                            <span class="s1">
+                            <select>
+                                <option>频率范围</option>
+                                <option>0~100HZ</option>
+                                <option>0~1000HZ</option>
+                                <option>0~10kHZ</option>
+                                <option>.......</option>
+                            </select>
+                            </span>
+                        </div>
+                    </div>
+
+                </div>
+			</div>
+		</div>
+		<!-- <div id='forecastDiv'>
+			<div id="forecastTitleDiv">健康预报</div>
+			<div id='forecastContent'></div>
+		</div> -->
+	</div>
+</div>

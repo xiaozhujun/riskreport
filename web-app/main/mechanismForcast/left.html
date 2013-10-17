@@ -1,0 +1,119 @@
+<script type="text/javascript">
+  var gd;
+  var rgd;
+  var time;
+  var token;
+  $(document).ready(function(){
+    simpleTree($("#mTree"));
+    // $(".faultTree .itemContent .bullet").click(function(event){
+    //   scope=shownId=$(this).attr("id");
+    //   domain=$(this).parents("[domain]").attr("domain");
+    //   $("#faultTreeContainer").show();
+    //   $("#monitorForcastContainer").hide();
+    //   render("faultTree");
+    //   event.stopPropagation();
+    // });
+
+    //$(".monitorForcast .itemContent .bullet").click(function(event){
+      //$("#graphTitle").text($(this).text());
+      var data = RGraph.array_pad([], 60);
+      if (typeof(gd)!="undefined") {
+        gd.stopDrawing();
+      } 
+      if (typeof(rgd)!="undefined") {
+        if (typeof(token)!="undefined") {
+          clearInterval(token);
+        }
+      } 
+      if (typeof(gd1)!="undefined") {
+        gd1.stopDrawing();
+      } 
+      if (typeof(rgd1)!="undefined") {
+        if (typeof(token1)!="undefined") {
+          clearInterval(token1);
+        }
+      } 
+      if($(this).attr("real")=="true"){
+        if (typeof(time)=="undefined") {time = 0;}
+        var sensorId = $(this).attr("id");
+        rgd = new RealGraphDrawer("graphContent", data);
+        token = setInterval(function(){
+          $.ajax({
+            url:"http://localhost:8080/portmessageserver/sensors/sensor/"+sensorId+"/"+time+".htm",
+            dataType:'jsonp',
+            success: function(data) {
+              var sensorValue = [];
+              for (var i = 0; i < data.length; i++) {
+                sensorValue = sensorValue.concat(data[i].values[0].value);
+                time = data[i].timestamp;
+              };
+              rgd.drawGraph(sensorValue);
+            }
+          });
+        }, 1000);
+      } else {
+        gd = new GraphDrawer("graphContent", data);
+        gd.drawGraph();
+      }
+      //event.stopPropagation();
+    });
+ // });
+
+</script>
+<div id="mTree" domain="mechanism">
+<!--       <div class="treeItem faultTree">
+        <div class="itemTitle titleShow">
+          <div class="bullet">失效树</div>
+        </div>
+        <div class="itemContent contentShow">
+          <div class="bullet" scope="qisheng" id="qisheng">起升机构</div>
+          <div class="bullet" scope="bianfu" id="bianfu">变幅机构</div>
+          <div class="bullet" scope="xuanzhuan" id="xuanzhuan">旋转机构</div>
+          <div class="bullet" scope="xingzou" id="xingzou">行走机构</div>
+        </div>
+      </div> -->
+      <div class="treeItem monitorForcast">
+        <div class="itemTitle titleShow">
+          <div class="bullet">起重机1</div>
+        </div>
+        <div class="itemContent contentShow">
+          <div class="treeItem" scope="qisheng">
+            <div class="itemTitle titleShow">--xx减速机</div>
+            <div class="itemContent contentShow">
+              <div class="treeItem">
+                <div class="itemTitle titleShow">--振动测点1</div>
+               
+              </div>
+              <div class="treeItem">
+                <div class="itemTitle">--振动测点2</div>
+                
+              </div>
+              <div class="treeItem">
+                <div class="itemTitle">-----</div>
+                
+              </div>
+              
+            </div>
+          </div>
+          <div class="treeItem" scope="bianfu">
+            <div class="itemTitle titleShow">--xx减速机</div>
+            <div class="itemContent contentShow">
+              <div class="treeItem">
+                <div class="itemTitle">--振动测点1</div>
+                
+              </div>
+              <div class="treeItem">
+                <div class="itemTitle">--振动测点2</div>
+                
+              </div>
+              <div class="treeItem">
+                <div class="itemTitle">-------</div>
+                
+              </div>
+              
+            </div>
+          </div>
+          
+        </div>
+      </div>
+</div>

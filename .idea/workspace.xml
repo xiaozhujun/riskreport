@@ -21,7 +21,7 @@
     <file path="/leftusermenu.jsp" changelist="4b7c5716-16bf-4ede-b3b0-be03d4d4763d" time="1381739879962" ignored="false" />
     <file path="/menu.css" changelist="4b7c5716-16bf-4ede-b3b0-be03d4d4763d" time="1377435021373" ignored="false" />
     <file path="/leftmenu.jsp" changelist="4b7c5716-16bf-4ede-b3b0-be03d4d4763d" time="1377688831117" ignored="false" />
-    <file path="/TreeMenu.jsp" changelist="4b7c5716-16bf-4ede-b3b0-be03d4d4763d" time="1381655521550" ignored="false" />
+    <file path="/TreeMenu.jsp" changelist="4b7c5716-16bf-4ede-b3b0-be03d4d4763d" time="1382015769179" ignored="false" />
     <file path="/test.jsp" changelist="4b7c5716-16bf-4ede-b3b0-be03d4d4763d" time="1377701256551" ignored="false" />
     <file path="/realtimeforecast.jsp" changelist="4b7c5716-16bf-4ede-b3b0-be03d4d4763d" time="1377825623832" ignored="false" />
     <file path="/menjia.jsp" changelist="4b7c5716-16bf-4ede-b3b0-be03d4d4763d" time="1377782040884" ignored="false" />
@@ -75,6 +75,10 @@
     <file path="/mymenu.css" changelist="4b7c5716-16bf-4ede-b3b0-be03d4d4763d" time="1381740957446" ignored="false" />
     <file path="$PROJECT_DIR$/../inspect-grails/web-app/deviceHistory.jsp" changelist="4b7c5716-16bf-4ede-b3b0-be03d4d4763d" time="1381741309610" ignored="false" />
     <file path="/showHtmlDeviceCount.jsp" changelist="4b7c5716-16bf-4ede-b3b0-be03d4d4763d" time="1381742807425" ignored="false" />
+    <file path="/left-tab.html" changelist="4b7c5716-16bf-4ede-b3b0-be03d4d4763d" time="1382016369894" ignored="false" />
+    <file path="/health-forecast.html" changelist="4b7c5716-16bf-4ede-b3b0-be03d4d4763d" time="1382019053975" ignored="false" />
+    <file path="/infotabs.css" changelist="4b7c5716-16bf-4ede-b3b0-be03d4d4763d" time="1382017191537" ignored="false" />
+    <file path="/info.css" changelist="4b7c5716-16bf-4ede-b3b0-be03d4d4763d" time="1382019400692" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -134,10 +138,37 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="TreeMenu.jsp" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="TreeMenu.jsp" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web-app/TreeMenu.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="11" selection-start="643" selection-end="643" vertical-scroll-proportion="0.24248497">
+            <state line="18" column="61" selection-start="962" selection-end="962" vertical-scroll-proportion="-2.25">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="info.css" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/web-app/main/css/info.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="111" column="29" selection-start="1320" selection-end="1320" vertical-scroll-proportion="0.55737704">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="zhengdongfenxi.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web-app/main/zhengdongfenxi.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="31" column="37" selection-start="1669" selection-end="1669" vertical-scroll-proportion="-3.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="health-forecast.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web-app/main/mechanismForcast/health-forecast.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="90" column="38" selection-start="4050" selection-end="4050" vertical-scroll-proportion="-13.888889">
               <folding />
             </state>
           </provider>
@@ -153,12 +184,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/web-app/showHtmlpeopleByDUid.jsp" />
-        <option value="$PROJECT_DIR$/src/java/com/csei/risk/MyDataSource.java" />
-        <option value="$PROJECT_DIR$/web-app/showHtmlpeopleInfoBydid.jsp" />
-        <option value="$PROJECT_DIR$/src/java/com/csei/risk/ReportService.java" />
-        <option value="$PROJECT_DIR$/web-app/js/DateDiff.js" />
-        <option value="$PROJECT_DIR$/web-app/showHtmlPeopleCount.jsp" />
         <option value="$PROJECT_DIR$/web-app/peopleCount.jsp" />
         <option value="$PROJECT_DIR$/web-app/deviceInfo.jsp" />
         <option value="$PROJECT_DIR$/src/java/com/csei/db/dbModel.java" />
@@ -167,14 +192,20 @@
         <option value="$PROJECT_DIR$/web-app/showHtmlDeviceHistory.jsp" />
         <option value="$PROJECT_DIR$/web-app/deviceHistory.jsp" />
         <option value="$PROJECT_DIR$/web-app/deviceCount.jsp" />
-        <option value="$PROJECT_DIR$/web-app/TreeMenu.jsp" />
         <option value="$PROJECT_DIR$/src/templates/war/web.xml" />
+        <option value="$PROJECT_DIR$/web-app/zhengdongfenxi.jsp" />
+        <option value="$PROJECT_DIR$/web-app/TreeMenu.jsp" />
+        <option value="$PROJECT_DIR$/web-app/main/zhengdongfenxi.html" />
+        <option value="$PROJECT_DIR$/web-app/main/left-tab.html" />
+        <option value="$PROJECT_DIR$/web-app/main/css/infotabs.css" />
+        <option value="$PROJECT_DIR$/web-app/main/mechanismForcast/health-forecast.html" />
+        <option value="$PROJECT_DIR$/web-app/main/css/info.css" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-132" />
-    <option name="y" value="128" />
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
     <option name="width" value="1382" />
     <option name="height" value="744" />
   </component>
@@ -235,6 +266,86 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="web-app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="riskreport" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="riskreport" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="web-app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="riskreport" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="riskreport" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="web-app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mechanismForcast" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="riskreport" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="riskreport" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="web-app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="css" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="riskreport" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="riskreport" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="web-app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="css" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -356,8 +467,8 @@
     <property name="GoToFile.includeJavaFiles" value="false" />
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="recentsLimit" value="5" />
     <property name="MemberChooser.sorted" value="false" />
+    <property name="recentsLimit" value="5" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="MemberChooser.showClasses" value="true" />
     <property name="GoToClass.includeLibraries" value="false" />
@@ -368,11 +479,11 @@
       <recent name="cn.com.jr" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\gitcommit\riskreport\web-app" />
       <recent name="E:\git\riskreport\web-app\report" />
       <recent name="E:\git\riskreport\web-app" />
       <recent name="E:\git\riskreport\src\java\com\csei\risk" />
       <recent name="E:\git\riskreport\web-app\css" />
-      <recent name="D:\git_workspace\riskreport\web-app\report" />
     </key>
   </component>
   <component name="RunManager" selected="Grails.Grails:riskreport">
@@ -398,6 +509,12 @@
       <ConfigurationWrapper RunnerId="Run" />
       <method />
     </configuration>
+    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
+      <module name="" />
+      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m" />
+      <option name="PROGRAM_PARAMETERS" />
+      <method />
+    </configuration>
     <configuration default="true" type="GrailsRunConfigurationType" factoryName="Grails">
       <module name="" />
       <setting name="vmparams" value="" />
@@ -408,31 +525,12 @@
       <setting name="launchBrowser" value="false" />
       <method />
     </configuration>
-    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
-      <module name="" />
-      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m" />
-      <option name="PROGRAM_PARAMETERS" />
-      <method />
-    </configuration>
     <configuration default="true" type="Remote" factoryName="Remote">
       <option name="USE_SOCKET_TRANSPORT" value="true" />
       <option name="SERVER_MODE" value="false" />
       <option name="SHMEM_ADDRESS" value="javadebug" />
       <option name="HOST" value="localhost" />
       <option name="PORT" value="5005" />
-      <method />
-    </configuration>
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <module name="" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="HTML_FILE_NAME" />
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <option name="VM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
       <method />
     </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
@@ -463,6 +561,19 @@
       <listeners />
       <method />
     </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module name="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method />
+    </configuration>
     <configuration default="true" type="Application" factoryName="Application">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <option name="MAIN_CLASS_NAME" />
@@ -476,13 +587,6 @@
       <option name="PASS_PARENT_ENVS" value="true" />
       <module name="" />
       <envs />
-      <method />
-    </configuration>
-    <configuration default="true" type="JavascriptDebugSession" factoryName="Local" singleton="true">
-      <JSDebuggerConfigurationSettings>
-        <option name="engineId" value="embedded" />
-        <option name="fileUrl" />
-      </JSDebuggerConfigurationSettings>
       <method />
     </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
@@ -504,6 +608,13 @@
       </option>
       <envs />
       <patterns />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugSession" factoryName="Local" singleton="true">
+      <JSDebuggerConfigurationSettings>
+        <option name="engineId" value="embedded" />
+        <option name="fileUrl" />
+      </JSDebuggerConfigurationSettings>
       <method />
     </configuration>
     <configuration default="false" name="Grails:riskreport" type="GrailsRunConfigurationType" factoryName="Grails">
@@ -565,19 +676,18 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-132" y="128" width="1382" height="744" extended-state="1" />
-    <editor active="false" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Persistence" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32590052" sideWeight="0.44242424" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.63723916" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.013722127" sideWeight="0.55227274" order="8" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.012006861" sideWeight="0.55227274" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
       <window_info id="Grails View" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -588,13 +698,14 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21136364" sideWeight="0.9862779" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.024242423" sideWeight="0.9879931" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4074074" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32852563" sideWeight="0.49710503" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="CDI" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32590052" sideWeight="0.44242424" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
@@ -659,6 +770,13 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/web-app/TreeMenu.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="11" selection-start="643" selection-end="643" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/java/com/csei/db/dbModel.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="30" column="25" selection-start="591" selection-end="591" vertical-scroll-proportion="0.65510947" />
@@ -667,16 +785,6 @@
     <entry file="file://$PROJECT_DIR$/src/java/com/csei/db/insertDB.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="51" column="30" selection-start="1545" selection-end="1545" vertical-scroll-proportion="0.60583943" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web-app/report/deviceHistory.jasper">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web-app/report/deviceCount.jasper">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/templates/war/web.xml">
@@ -688,14 +796,75 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/java/com/csei/risk/ReportService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="522" column="32" selection-start="21487" selection-end="21487" vertical-scroll-proportion="0.4448598">
+        <state line="522" column="32" selection-start="21487" selection-end="21487" vertical-scroll-proportion="0.4448598" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web-app/zhengdongfenxi.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="8" selection-start="239" selection-end="239" vertical-scroll-proportion="0.52734375">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web-app/main/css/layout.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web-app/main/css/base.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web-app/main/mechanismForcast/left.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-4.220441">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web-app/main/css/infotabs.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="30" column="0" selection-start="435" selection-end="435" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web-app/TreeMenu.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="11" selection-start="643" selection-end="643" vertical-scroll-proportion="0.24248497">
+        <state line="18" column="61" selection-start="962" selection-end="962" vertical-scroll-proportion="-2.25">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web-app/main/left-tab.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="48" selection-start="502" selection-end="502" vertical-scroll-proportion="-7.5">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web-app/main/zhengdongfenxi.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="31" column="37" selection-start="1669" selection-end="1669" vertical-scroll-proportion="-3.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web-app/main/mechanismForcast/health-forecast.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="90" column="38" selection-start="4050" selection-end="4050" vertical-scroll-proportion="-13.888889">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web-app/main/css/info.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="111" column="29" selection-start="1320" selection-end="1320" vertical-scroll-proportion="0.55737704">
           <folding />
         </state>
       </provider>

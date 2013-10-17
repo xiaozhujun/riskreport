@@ -11,6 +11,26 @@
     <script src="js/jquery-1.4.2.js"></script>
     <script type="text/javascript" src="My97DatePicker/WdatePicker.js"></script>
     <script type="text/javascript" src="js/DateDiff.js"></script>
+    <!--引入zhengdongfenxi页面  !-->
+    <link rel="stylesheet" type="text/css" href="main/css/base.css">
+    <link rel="stylesheet" type="text/css" href="main/css/jquery-ui-1.10.3.custom.css">
+    <link rel="stylesheet" type="text/css" href="main/css/layout.css">
+    <link rel="stylesheet" type="text/css" href="main/css/title.css">
+    <link rel="stylesheet" type="text/css" href="main/css/info.css">
+    <link rel="stylesheet" type="text/css" href="main/css/infotable.css">
+    <link rel="stylesheet" type="text/css" href="main/css/simpleTree.css">
+    <link rel="stylesheet" type="text/css" href="main/css/imgpop.css">
+
+    <script type="text/javascript" src='main/js/jquery-1.7.2.min.js'></script>
+    <script type="text/javascript" src='main/js/globalVar.js'></script>
+    <script type="text/javascript" src="main/js/jquery-ui-1.10.3.custom.js"></script>
+    <script type="text/javascript" src="main/js/simpleTree.js"></script>
+    <script type="text/javascript" src="main/js/getParam.js"></script>
+    <script type="text/javascript" src="main/js/dynamicProfile.js"></script>
+    <script type="text/javascript" src="main/js/rgraph/libraries/RGraph.common.core.js" ></script>
+    <script type="text/javascript" src="main/js/rgraph/libraries/RGraph.common.effects.js" ></script>
+    <script type="text/javascript" src="main/js/rgraph/libraries/RGraph.line.js" ></script>
+    <script type="text/javascript" src="main/js/imgPop.js"></script>
     <script>
         $(function(){
             $.ajaxSetup ({
@@ -55,6 +75,9 @@
             })
             $(".generatereport").click(function(){
                 $("#content").load("reportHtml.jsp");
+            })
+            $(".zhengdong").click(function(){
+                $("#content").load("main/zhengdongfenxi.html");
             })
         });
     </script>
@@ -219,6 +242,7 @@
     </li>
 </ul>
 <li class="generatereport">生成报告</li>
+<li class="zhengdong">减速机振动信号分析</li>
 </ul>
 </body>
 </html>

@@ -3,3 +3,5 @@ target
 riskreport.iml
 riskreport-grailsPlugins.iml
 .project
+lib
+scripts

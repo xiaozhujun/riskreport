@@ -78,27 +78,11 @@
             })
             $(".zhengdong").click(function(){
                 $("#content").load("main/zhengdongfenxi.html");
-            })
+            });
+
+            $(".zhengdong").trigger("click");
         });
     </script>
-    <style>
-        body{
-            font-size: 20px;
-            margin: 0px;
-        }
-        ul li{
-            list-style: none;
-        }
-        li{
-            list-style-image: url('images/plus.gif');
-        }
-        #treemenu{
-
-            width: 385px;
-
-        }
-
-    </style>
 </head>
 
 <body>

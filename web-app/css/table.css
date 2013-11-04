@@ -154,14 +154,14 @@
 #left{
     width: 325px;
     float: left;
-    height: 1200px;
+    min-height: 820px;
     border: 1px solid #999999;
     margin-top: 5px;
     overflow: auto;
 }
 #content{
     /* background-color: red;*/
-    width: 900px;
+    width: 1000px;
     float:left;
     margin-top: 5px;
     margin-left: 5px;
@@ -169,5 +169,20 @@
     overflow: auto;
     border: 1px solid #999999;
 
+}
+
+body{
+     font-size: 20px;
+     margin: 0px;
+     width: 1350px;
+}
+ul li{
+      list-style: none;
+}
+li{
+    list-style-image: url('images/plus.gif');
+}
+#treemenu{
+         width: 385px;
 }
 

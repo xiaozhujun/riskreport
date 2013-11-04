@@ -10,7 +10,6 @@
 <head>
     <title></title>
     <link rel="stylesheet" href="css/table.css">
-    <script src="js/jquery-1.4.2.js"></script>
     <script src="js/changeColor.js"></script>
 </head>
 <body>

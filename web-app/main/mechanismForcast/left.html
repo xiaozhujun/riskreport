@@ -18,6 +18,8 @@
         }
       } 
 
+
+
       if($(this).attr("real")=="true"){
         if (typeof(time)=="undefined") {time = 0;}
         var sensorId = $(this).attr("sensorId");
@@ -42,6 +44,8 @@
       }
       event.stopPropagation();
     });
+
+    $("#zd000001").trigger("click");
   });
 
 </script>
@@ -67,7 +71,7 @@
             <div class="itemTitle titleShow">--xx减速机</div>
             <div class="itemContent contentShow">
               <div class="treeItem">
-                <div class="itemTitle titleShow sensorItem" real="true" sensorId="zd000001">--振动测点1</div>
+                <div id="zd000001" class="itemTitle titleShow sensorItem" real="true" sensorId="zd000001">--振动测点1</div>
                
               </div>
               <div class="treeItem">

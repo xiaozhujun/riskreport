@@ -7,7 +7,7 @@
               .Set('linewidth', 1)
               .Set('filled', true)
               .Set('fillstyle', 'rgba(128,255,128,0.5)')
-              .Set('ymax', 60)
+              .Set('ymax', 300)
               .Set('numxticks', 5)
               .Set('labels', ['Now','10s','20s','30s','40s','50s','60s'])
               .Draw();
@@ -16,6 +16,20 @@
           for (var i = 0; i < sensorValue.length; i++) {
             data.pop();
           };
+        };
+
+        this.realDrawGraph = function(sensorValue){
+          RGraph.Clear(document.getElementById(target));
+          RGraph.ObjectRegistry.Clear();
+          var line = new RGraph.Line(target, sensorValue)
+              .Set('colors', ['green'])
+              .Set('linewidth', 1)
+              .Set('filled', false)
+              .Set('fillstyle', 'rgba(128,255,128,0.5)')
+              .Set('ymax', 300)
+              .Set('numxticks', 5)
+              .Set('labels', ['Now','100ms','20ms','300ms','400ms','500ms','600ms','700ms','800ms','900ms','1000ms'])
+              .Draw();
         };
       }
 

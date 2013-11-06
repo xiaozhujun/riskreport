@@ -50,7 +50,14 @@
     <listener>
         <listener-class>org.codehaus.groovy.grails.web.context.GrailsContextLoaderListener</listener-class>
     </listener>
-
+      <servlet>
+          <servlet-name>riskreportservlet</servlet-name>
+          <servlet-class>com.csei.risk.RiskReportServlet</servlet-class>
+      </servlet>
+    <servlet-mapping>
+        <servlet-name>riskreportservlet</servlet-name>
+        <url-pattern>/riskreportservlet</url-pattern>
+    </servlet-mapping>
     <!-- Grails dispatcher servlet -->
     <servlet>
         <servlet-name>grails</servlet-name>

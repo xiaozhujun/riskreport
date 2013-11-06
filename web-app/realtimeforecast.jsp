@@ -12,7 +12,6 @@
     <script src="js/changeColor.js"></script>
     <script src="/main/js/getParam.js"></script>
      <link rel="stylesheet" href="css/table.css">
-
 </head>
 <body onload="blinkit()">
   <jsp:include page="nav.jsp"></jsp:include>

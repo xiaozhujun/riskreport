@@ -20,7 +20,6 @@
     <link rel="stylesheet" type="text/css" href="main/css/infotable.css">
     <link rel="stylesheet" type="text/css" href="main/css/simpleTree.css">
     <link rel="stylesheet" type="text/css" href="main/css/imgpop.css">
-
     <script type="text/javascript" src='main/js/jquery-1.7.2.min.js'></script>
     <script type="text/javascript" src='main/js/globalVar.js'></script>
     <script type="text/javascript" src="main/js/jquery-ui-1.10.3.custom.js"></script>
@@ -44,14 +43,12 @@
                         $(this).css('list-style-image','url(images/plus.gif)').children().hide();
                     }
                 }
-
                 return false;
             }).css('cursor','pointer').click();
             $('li:not(:has(ul))').css({cursor:'pointer','list-style-image':'none'});
 
             /* 跳转功能*/
             $(".menjiali").click(function(event){
-                   // alert("menjia") ;
                       $("#content").load("menjia.jsp");
                       event.stopPropagation();
                     });
@@ -79,12 +76,10 @@
             $(".zhengdong").click(function(){
                 $("#content").load("main/zhengdongfenxi.html");
             });
-
             $(".zhengdong").trigger("click");
         });
     </script>
 </head>
-
 <body>
 <ul>
     <li>健康实时预报
@@ -92,36 +87,12 @@
             <li>主要结构
                 <ul>
                     <li class="menjiali">门架机构
-                        <ul>
-                            <li class="menjia1">圆筒</li>
-                            <li class="menjia1">横梁</li>
-                            <li class="menjia1">端梁</li>
-                        </ul>
                     </li>
-
-
             <li class="bijia">臂架系统
-                <ul>
-                    <li>象鼻梁</li>
-                    <li>大拉杆</li>
-                    <li>臂架</li>
-                </ul>
-
             </li>
             <li class="shangzhuanzhuli">上转柱
-                <ul>
-                    <li>立柱上段</li>
-                    <li>立柱下段</li>
-                </ul>
-
             </li>
             <li>平衡系统
-                <ul>
-                    <li>平衡梁</li>
-                    <li>小拉杆</li>
-                </ul>
-
-
             </li>
             <li>转台总成</li>
         </ul>
@@ -129,98 +100,12 @@
     <li>主要机构
         <ul>
             <li class="qisheng">起升机构
-                <ul>
-                    <li>驱动装置
-                        <ul>
-                            <li>电动机</li>
-                            <li>制动器</li>
-                            <li>减速器</li>
-                            <li>高速轴联轴器</li>
-                        </ul>
-                    </li>
-                    <li>钢丝绳卷绕系统
-                        <ul>
-                            <li>卷筒总成</li>
-                            <li>钢丝绳</li>
-                            <li>滑轮</li>
-                        </ul>
-                    </li>
-                    <li>取物装置
-                        <ul >
-                            <li>吊钩总成</li>
-                            <li>抓斗</li>
-                        </ul>
-
-
-                    </li>
-                </ul>
             </li>
             <li class="huizhuan">回转机构
-                <ul>
-                    <li>支承装置</li>
-                    <li>驱动装置
-                        <ul>
-                            <li>电动机</li>
-                            <li>制动器</li>
-                            <li>减速器</li>
-                        </ul>
-                    </li>
-                    <li>安全保护装置
-                        <ul>
-                            <li>回转锚定装置</li>
-                        </ul>
-                    </li>
-                </ul>
-
-
-
-
             </li>
             <li>行走机构
-                <ul>
-                    <li>支承装置
-                        <ul>
-                            <li>八轮均衡梁</li>
-                            <li>四轮均衡梁</li>
-                            <li>车轮组
-                                <ul>
-                                    <li>驱动车架</li>
-                                    <li>从动车架</li>
-                                    <li>驱动轮装配</li>
-                                    <li>从动轮装配</li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </li>
-                    <li>驱动装置
-
-
-                    </li>
-                    <li>安全保护装置
-                        <ul>
-                            <li>锚定装置</li>
-                            <li>电动防跑器</li>
-                            <li>缓冲器</li>
-                        </ul>
-                    </li>
-                    <li>防风系缆</li>
-                </ul>
-
             </li>
             <li class="bianfu">变幅机构
-                <ul>
-                    <li>驱动装置
-                        <ul>
-                            <li>电动机</li>
-                            <li>减速器</li>
-                            <li>摇架装配</li>
-                            <li>齿条总成</li>
-                        </ul>
-
-                    </li>
-
-                </ul>
-
             </li>
         </ul>
     </li>

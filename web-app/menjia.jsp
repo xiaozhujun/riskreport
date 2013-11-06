@@ -13,7 +13,6 @@
     <script src="js/changeColor.js"></script>
 </head>
 <body onload="blinkit()">
-   <h1></h1>
    <div id="main">
        <div class="title"><span class="title-font">机构/结构:门架结构</span></div>
        <div class="theader"><span class="item">监测对象</span><span class="item1">监测点</span><span class="item2">结果状态</span></div>
@@ -52,13 +51,7 @@
              <span class="t2"><span class="btn">正常</span></span>
               <span class="t2"><span class="btn">正常</span> </span>
             <span class="t2"><span class="btn">正常</span></span>
-
-
-
-
-
        </span></div>
-
    </div>
 </body>
 </html>

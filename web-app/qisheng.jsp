@@ -48,22 +48,22 @@
            <span class="t1">S轮4</span>
          </span>
            <span class="menjia-item3">
-               <span class="t2"><span class="btn">正常</span></span>
            <span class="t2"><span class="btn">正常</span></span>
            <span class="t2"><span class="btn">正常</span></span>
            <span class="t2"><span class="btn">正常</span></span>
-                <span class="t2"><span class="btn">正常</span></span>
+           <span class="t2"><span class="btn">正常</span></span>
+           <span class="t2"><span class="btn">正常</span></span>
            <span class="t2"><span class="btn">正常</span></span>
            <span class="t2"><span class="btn">正常</span></span>
            <span class="t2"><span class="btn1">异常</span></span>
-                <span class="t2"><span class="btn">正常</span></span>
            <span class="t2"><span class="btn">正常</span></span>
            <span class="t2"><span class="btn">正常</span></span>
            <span class="t2"><span class="btn">正常</span></span>
-                <span class="t2"><span class="btn1">异常</span></span>
+           <span class="t2"><span class="btn">正常</span></span>
+           <span class="t2"><span class="btn1">异常</span></span>
            <span class="t2"><span class="btn">正常</span></span>
            <span class="t2"><span class="btn">正常</span></span>
-               </span></div>
+           </span></div>
 
 </div>
 </body>

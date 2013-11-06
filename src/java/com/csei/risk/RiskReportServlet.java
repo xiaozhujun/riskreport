@@ -1,31 +1,42 @@
 package com.csei.risk;
-import net.sf.jasperreports.engine.*;
-import net.sf.jasperreports.engine.data.JRMapCollectionDataSource;
-import java.io.ByteArrayOutputStream;
+
+import javax.servlet.ServletException;
+import javax.servlet.ServletOutputStream;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
 import java.io.File;
-import java.io.OutputStream;
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.SQLException;
-import java.sql.Timestamp;
-import java.text.DateFormat;
-import java.text.ParseException;
-import java.text.SimpleDateFormat;
+import java.io.IOException;
+import java.io.PrintWriter;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
-import net.sf.jasperreports.engine.export.JRHtmlExporter;
-import net.sf.jasperreports.engine.export.JRHtmlExporterParameter;
+import net.sf.jasperreports.engine.*;
+import net.sf.jasperreports.engine.export.JRRtfExporter;
+import net.sf.jasperreports.engine.JRExporter;
+import net.sf.jasperreports.engine.export.JRXlsExporter;
+import net.sf.jasperreports.engine.export.JRXlsExporterParameter;
+import net.sf.jasperreports.engine.design.JasperDesign;
+import java.io.ByteArrayOutputStream;
 import net.sf.jasperreports.engine.util.JRLoader;
+import net.sf.jasperreports.engine.JasperReport;
+import net.sf.jasperreports.engine.JasperFillManager;
+import net.sf.jasperreports.engine.JasperPrint;
+import net.sf.jasperreports.engine.export.JRHtmlExporterParameter;
+import net.sf.jasperreports.engine.JRExporterParameter;
+import net.sf.jasperreports.engine.export.JRHtmlExporter;
+import net.sf.jasperreports.engine.JasperRunManager;
+import net.sf.jasperreports.engine.data.JRMapCollectionDataSource;
 /**
  * Created with IntelliJ IDEA.
- * User: xiaozhujun
- * Date: 13-8-25
- * Time: 下午6:59
+ * User: ThinkPad
+ * Date: 13-11-6
+ * Time: 下午3:46
  * To change this template use File | Settings | File Templates.
  */
-public class ReportService {
-    public static String exportRiskReport(String reportTemplate) throws JRException {        //以javabean作为数据源
+public class RiskReportServlet extends HttpServlet{
+    @Override
+    protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         ArrayList reportRows=new ArrayList();
         HashMap row1Map=new HashMap();
         HashMap row2Map=new HashMap();
@@ -107,8 +118,8 @@ public class ReportService {
         row6Map.put("point","位置1：高速轴外侧XYZ");
         row6Map.put("result","正常");
         row7Map.put("struture","");
-        row7Map.put("object","");
-        row7Map.put("point","位置2：电机地脚1内侧 Y Z");
+        row7Map.put("object","位置2：电机地脚1内侧 Y Z");
+        row7Map.put("point","");
         row7Map.put("result","正常");
         row8Map.put("struture","");
         row8Map.put("object","");
@@ -357,215 +368,31 @@ public class ReportService {
         reportRows.add(row53Map);
         reportRows.add(row54Map);
         reportRows.add(row55Map);
+        byte[] bytes=null;
+        try{
         JRMapCollectionDataSource dataSource;
         dataSource=new JRMapCollectionDataSource(reportRows);
-        File reportFile = new File(reportTemplate);
-        JasperReport jasperReport = (JasperReport) JRLoader.loadObject(reportFile.getPath());
+        File reportFile = new File(this.getServletConfig().getServletContext().getRealPath(
+                "/report/RiskReportTemplate.jasper"));
+        JasperReport jasperReport = (JasperReport) JRLoader
+                .loadObject(reportFile.getPath());
         Map map=new HashMap();
         map.put("title","我的报表");
-        OutputStream outputStream = new ByteArrayOutputStream();
-        JasperPrint jasperPrint = JasperFillManager.fillReport(jasperReport, map, dataSource);
-        JRHtmlExporter exporter = new JRHtmlExporter();
-        exporter.setParameter(
-                JRHtmlExporterParameter.IS_USING_IMAGES_TO_ALIGN,
-                Boolean.FALSE);
-        exporter.setParameter(JRExporterParameter.JASPER_PRINT,
-                jasperPrint);
-        exporter.setParameter(JRExporterParameter.CHARACTER_ENCODING,
-                "UTF-8");
-        exporter.setParameter(JRExporterParameter.OUTPUT_STREAM,
-                outputStream);
-        exporter.exportReport();
-        String result =  outputStream.toString();
-        return result;
-    }
-    public static String exportDeviceAbnormalCount(String reportTemplate,int day) throws JRException {    //以mysql数据库作为数据源
-        String url = "jdbc:mysql://localhost:3306/inspect3";
-        Connection connection=null;
-        try{
-            Class.forName("com.mysql.jdbc.Driver");
-        }catch (ClassNotFoundException e){
+        bytes = JasperRunManager.runReportToPdf(reportFile.getPath(), map, dataSource);
+        }catch(JRException e){
             e.printStackTrace();
         }
-        try{
-            connection = DriverManager.getConnection(url, "root", "root");
-        }catch (SQLException e){
-            e.printStackTrace();
-        }
-        File reportFile = new File(reportTemplate);
-        Long day1=Long.valueOf(day);
-        Map parameters = new HashMap();
-        parameters.put("day",day1);
-        JasperReport jasperReport = (JasperReport) JRLoader.loadObject(reportFile.getPath());
-        Map map=new HashMap();
-        map.put("title","我的报表");
-        OutputStream outputStream = new ByteArrayOutputStream();
-        JasperPrint jasperPrint = JasperFillManager.fillReport(jasperReport, parameters,connection );
-        JRHtmlExporter exporter = new JRHtmlExporter();
-        exporter.setParameter(
-                JRHtmlExporterParameter.IS_USING_IMAGES_TO_ALIGN,
-                Boolean.FALSE);
-        exporter.setParameter(JRExporterParameter.JASPER_PRINT,
-                jasperPrint);
-        exporter.setParameter(JRExporterParameter.CHARACTER_ENCODING,
-                "UTF-8");
-        exporter.setParameter(JRExporterParameter.OUTPUT_STREAM,
-                outputStream);
-        exporter.exportReport();
-        String result =  outputStream.toString();
-        return result;
-    }
-    public static String exportRiskReport(String reportTemplate,String time,String l,String p) throws JRException {
-        String url = "jdbc:mysql://localhost:3306/inspect3";
-        Connection connection=null;
-        try{
-            Class.forName("com.mysql.jdbc.Driver");
-        }catch (ClassNotFoundException e){
-            e.printStackTrace();
-        }
-        try{
-            connection = DriverManager.getConnection(url, "root", "root");
-        }catch (SQLException e){
-            e.printStackTrace();
-        }
-        File reportFile = new File(reportTemplate);
-        DateFormat format = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
-        format.setLenient(false);
-        Timestamp ts = null;
-        try {
-            ts = new Timestamp(format.parse(time).getTime());
-        } catch (ParseException e) {
-            e.printStackTrace();  //To change body of catch statement use File | Settings | File Templates.
-        }
-        long t1 = Long.parseLong(l);
-        Map parameters = new HashMap();
-        parameters.put("stime",ts);
-        parameters.put("tid", t1);
-        parameters.put("SUBREPORT_DIR",p);
-        JasperReport jasperReport = (JasperReport) JRLoader.loadObject(reportFile.getPath());
-        Map map=new HashMap();
-        map.put("title","我的报表");
-        OutputStream outputStream = new ByteArrayOutputStream();
-        JasperPrint jasperPrint = JasperFillManager.fillReport(jasperReport, parameters,connection );
-        JRHtmlExporter exporter = new JRHtmlExporter();
-        exporter.setParameter(
-                JRHtmlExporterParameter.IS_USING_IMAGES_TO_ALIGN,
-                Boolean.FALSE);
-        exporter.setParameter(JRExporterParameter.JASPER_PRINT,
-                jasperPrint);
-        exporter.setParameter(JRExporterParameter.CHARACTER_ENCODING,
-                "UTF-8");
-        exporter.setParameter(JRExporterParameter.OUTPUT_STREAM,
-                outputStream);
-        exporter.exportReport();
-        String result =  outputStream.toString();
-        return result;
-    }
-    public static String exportdeviceAbnormalCount(String reportTemplate, Long day) throws JRException{
-        String url = "jdbc:mysql://localhost:3306/inspect3";
-        Connection connection=null;
-        try{
-            Class.forName("com.mysql.jdbc.Driver");
-        }catch (ClassNotFoundException e){
-            e.printStackTrace();
-        }
-        try{
-            connection = DriverManager.getConnection(url, "root", "root");
-        }catch (SQLException e){
-            e.printStackTrace();
-        }
-        File reportFile = new File(reportTemplate);
-        Map parameters = new HashMap();
-        parameters.put("day",day);
-        JasperReport jasperReport = (JasperReport) JRLoader.loadObject(reportFile.getPath());
-        Map map=new HashMap();
-        map.put("title","我的报表");
-        OutputStream outputStream = new ByteArrayOutputStream();
-        JasperPrint jasperPrint = JasperFillManager.fillReport(jasperReport, parameters,connection );
-        JRHtmlExporter exporter = new JRHtmlExporter();
-        exporter.setParameter(
-                JRHtmlExporterParameter.IS_USING_IMAGES_TO_ALIGN,
-                Boolean.FALSE);
-        exporter.setParameter(JRExporterParameter.JASPER_PRINT,
-                jasperPrint);
-        exporter.setParameter(JRExporterParameter.CHARACTER_ENCODING,
-                "UTF-8");
-        exporter.setParameter(JRExporterParameter.OUTPUT_STREAM,
-                outputStream);
-        exporter.exportReport();
-        String result =  outputStream.toString();
-        return result;
-    }
-    public static String exportPeopleCountByDidDays(String reportTemplate,Long did,Long day) throws JRException{
-        String url = "jdbc:mysql://localhost:3306/inspect3";
-        Connection connection=null;
-        try{
-            Class.forName("com.mysql.jdbc.Driver");
-        }catch (ClassNotFoundException e){
-            e.printStackTrace();
-        }
-        try{
-            connection = DriverManager.getConnection(url, "root", "root");
-        }catch (SQLException e){
-            e.printStackTrace();
-        }
-        File reportFile = new File(reportTemplate);
-        Map parameters = new HashMap();
-        parameters.put("day",day);
-        parameters.put("devid",did);
-        JasperReport jasperReport = (JasperReport) JRLoader.loadObject(reportFile.getPath());
-        Map map=new HashMap();
-        map.put("title","我的报表");
-        OutputStream outputStream = new ByteArrayOutputStream();
-        JasperPrint jasperPrint = JasperFillManager.fillReport(jasperReport, parameters,connection );
-        JRHtmlExporter exporter = new JRHtmlExporter();
-        exporter.setParameter(
-                JRHtmlExporterParameter.IS_USING_IMAGES_TO_ALIGN,
-                Boolean.FALSE);
-        exporter.setParameter(JRExporterParameter.JASPER_PRINT,
-                jasperPrint);
-        exporter.setParameter(JRExporterParameter.CHARACTER_ENCODING,
-                "UTF-8");
-        exporter.setParameter(JRExporterParameter.OUTPUT_STREAM,
-                outputStream);
-        exporter.exportReport();
-        String result =  outputStream.toString();
-        return result;
-    }
-    public static String exportDeviceHistory(String reportTemplate,Long day) throws JRException{
-        String url = "jdbc:mysql://localhost:3306/inspect3";
-        Connection connection=null;
-        try{
-            Class.forName("com.mysql.jdbc.Driver");
-        }catch (ClassNotFoundException e){
-            e.printStackTrace();
-        }
-        try{
-            connection = DriverManager.getConnection(url, "root", "root");
-        }catch (SQLException e){
-            e.printStackTrace();
-        }
-        File reportFile = new File(reportTemplate);
-        Map parameters = new HashMap();
-        parameters.put("day",day);
-        JasperReport jasperReport = (JasperReport) JRLoader.loadObject(reportFile.getPath());
-        Map map=new HashMap();
-        map.put("title","我的报表");
-        OutputStream outputStream = new ByteArrayOutputStream();
-        JasperPrint jasperPrint = JasperFillManager.fillReport(jasperReport, parameters,connection );
-        JRHtmlExporter exporter = new JRHtmlExporter();
-        exporter.setParameter(
-                JRHtmlExporterParameter.IS_USING_IMAGES_TO_ALIGN,
-                Boolean.FALSE);
-        exporter.setParameter(JRExporterParameter.JASPER_PRINT,
-                jasperPrint);
-        exporter.setParameter(JRExporterParameter.CHARACTER_ENCODING,
-                "UTF-8");
-        exporter.setParameter(JRExporterParameter.OUTPUT_STREAM,
-                outputStream);
-        exporter.exportReport();
-        String result =  outputStream.toString();
-        return result;
-    }
+        response.setContentType("application/pdf");
+        response.setContentLength(bytes.length);
+        ServletOutputStream outputStream = response.getOutputStream();
+        outputStream.write(bytes, 0, bytes.length);
+        outputStream.flush();
+        outputStream.close();
 
+
+    }
+    @Override
+    protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+          doPost(request,response);
+    }
 }

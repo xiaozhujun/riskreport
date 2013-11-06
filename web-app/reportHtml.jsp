@@ -3,12 +3,16 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
          pageEncoding="UTF-8"%>
   <head>
-      <title></title>
+      <title>报表浏览</title>
       <% String path = request.getContextPath();
           String basePase = request.getScheme()+"://"+request.getServerName()+":"+request.getServerPort()+path+"/";%>
+  <link rel="stylesheet" href="css/table.css">
   </head>
 <body>
-<div style="margin-left: 800px;cursor: pointer;" class="tabItem"><a style="text-decoration: none;" href="<%=basePase%>riskreport.jsp">导出报告</a></div>
+<div class="title">
+    <span class="title-font">起重机安全监测评估</span>
+</div>
+<div  class="daochu"><span class="b"><a  href="../riskreport/riskreportservlet">导出报告</a></span></div>
 <%
     String reportTemplate = this.getServletConfig().getServletContext().getRealPath(
             "/report/RiskReportTemplate.jasper");

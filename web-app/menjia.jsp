@@ -8,7 +8,7 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <title></title>
+    <title>门架机构</title>
      <link rel="stylesheet" href="css/table.css">
     <script src="js/changeColor.js"></script>
 </head>

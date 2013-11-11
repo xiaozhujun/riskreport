@@ -82,4 +82,14 @@
 {
   background: #69c;
 }
+#nav {
+    background-color: highlight;
+    width: 100%;
+    margin-top: 2px;
+}
+
+a:LINK {
+    /*color: white;*/
+    font-size: 15px;
+}
 

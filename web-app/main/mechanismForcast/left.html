@@ -26,7 +26,7 @@
         rgd = new RealGraphDrawer("graphContent", data);
         token = setInterval(function(){
           $.ajax({
-            url:"http://localhost:8080/craneDataProvider/sensors/sensor/data/"+sensorId+".htm",
+            url:"/craneDataProvider/sensors/sensor/data/"+sensorId+".htm",
             dataType:'jsonp',
             success: function(data) {
               var sensorValue = [];

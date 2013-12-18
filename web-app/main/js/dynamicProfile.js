@@ -1,4 +1,4 @@
-      function RealGraphDrawer (target,data) {
+      function RealGraphDrawer (target,data,count) {
         this.drawGraph = function(sensorValue){
           RGraph.Clear(document.getElementById(target));
           RGraph.ObjectRegistry.Clear();
@@ -13,9 +13,18 @@
               .Draw();
               //alert(target+":"+sensorValue);
           data = sensorValue.concat(data);
-          for (var i = 0; i < sensorValue.length; i++) {
-            data.pop();
-          };
+          if(count==0){
+              for (var i = 0; i < sensorValue.length; i++) {
+                  data.pop();
+              }
+          }else if(count>0){
+              var len = data.length - count;
+              if(len>0){
+                  for (var i = 0; i < len; i++) {
+                      data.pop();
+                  }
+              }
+          }
         };
 
         this.realDrawGraph = function(sensorValue){
@@ -32,31 +41,6 @@
               .Draw();
         };
       }
-
-/*      function RealGraphDrawer (target,data) {
-        this.drawGraph = function(){
-          RGraph.Clear(document.getElementById(target));
-          RGraph.ObjectRegistry.Clear();
-          var line = new RGraph.Line(target, data)
-              .Set('colors', ['green'])
-              .Set('linewidth', 1)
-              .Set('filled', true)
-              .Set('fillstyle', 'rgba(128,255,128,0.5)')
-              .Set('ymax', 60)
-              .Set('numxticks', 5)
-              .Set('labels', ['Now','10s','20s','30s','40s','50s','60s'])
-              .Draw();
-          data = sensorValue.concat(data);
-          for (var i = 0; i < sensorValue.length; i++) {
-            data.pop();
-          };
-          this.timer = setInterval(this.drawGraph, 1000);
-        };
-        this.stopDrawing = function(){
-          clearInterval(this.timer);
-        };
-      }*/
-
 
       function GraphDrawer (target,data) {
         var that = this;

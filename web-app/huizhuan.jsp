@@ -8,7 +8,7 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <title></title>
+    <title>回转机构</title>
     <link rel="stylesheet" href="css/table.css">
     <script src="js/jquery-1.4.2.js"></script>
     <script src="js/changeColor.js"></script>

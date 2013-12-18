@@ -37,7 +37,7 @@
               .Set('fillstyle', 'rgba(128,255,128,0.5)')
               .Set('ymax', 300)
               .Set('numxticks', 5)
-              .Set('labels', ['Now','100ms','20ms','300ms','400ms','500ms','600ms','700ms','800ms','900ms','1000ms'])
+              .Set('labels', ['Now','100ms','200ms','300ms','400ms','500ms','600ms','700ms','800ms','900ms','1000ms'])
               .Draw();
         };
       }

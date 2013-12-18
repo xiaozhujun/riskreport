@@ -8,7 +8,7 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <title></title>
+    <title>首页</title>
     <script src="js/changeColor.js"></script>
     <script src="/main/js/getParam.js"></script>
      <link rel="stylesheet" href="css/table.css">

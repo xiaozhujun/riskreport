@@ -154,7 +154,6 @@
     overflow: auto;
 }
 #content{
-    width: 1070px;
     float:left;
     margin-top: 5px;
     margin-left: 5px;
@@ -166,7 +165,7 @@
 body{
      font-size: 20px;
      margin: 0px;
-     width: 1350px;
+     width: 1700px;
 }
 ul li{
       list-style: none;

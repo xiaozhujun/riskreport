@@ -2,6 +2,18 @@
         this.drawGraph = function(sensorValue){
           RGraph.Clear(document.getElementById(target));
           RGraph.ObjectRegistry.Clear();
+           if(count==0){
+                data = sensorValue;
+           }else if(count>0){
+                data = sensorValue.concat(data);
+                var len = data.length - count;
+                if(len>0){
+                    //alert(len);
+                    for (var i = 0; i < len; i++) {
+                        data.pop();
+                    }
+                }
+           }
           var line = new RGraph.Line(target, data)
               .Set('colors', ['green'])
               .Set('linewidth', 1)
@@ -12,19 +24,7 @@
               .Set('labels', ['Now','10s','20s','30s','40s','50s','60s'])
               .Draw();
               //alert(target+":"+sensorValue);
-          data = sensorValue.concat(data);
-          if(count==0){
-              for (var i = 0; i < sensorValue.length; i++) {
-                  data.pop();
-              }
-          }else if(count>0){
-              var len = data.length - count;
-              if(len>0){
-                  for (var i = 0; i < len; i++) {
-                      data.pop();
-                  }
-              }
-          }
+
         };
 
         this.realDrawGraph = function(sensorValue){

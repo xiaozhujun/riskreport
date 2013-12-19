@@ -36,7 +36,7 @@
                       sensorValue = sensorValue.concat(data.data[i]);
                       //time = data[i].timestamp;
                   }
-                  rgd.realDrawGraph(sensorValue);
+                  rgd.drawGraph(sensorValue);
               }
             }
           });
@@ -49,6 +49,14 @@
     });
 
     $("#zd000001").trigger("click");
+
+    $("#left").mouseover(function(){
+        $(this).css("width",265);
+    });
+
+      $("#left").mouseout(function(){
+          $(this).css("width",2);
+      });
   });
 
 </script>

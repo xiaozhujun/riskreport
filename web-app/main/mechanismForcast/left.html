@@ -1,3 +1,4 @@
+<link rel="stylesheet" href="css/reportList.css">
 <script type="text/javascript">
   var gd;
   var rgd;
@@ -61,39 +62,148 @@
 
 </script>
 
-<div id="mTree" domain="mechanism">
-    <div class="treeItem" scope="qisheng">
-        <div class="itemTitle titleShow">减速机#001</div>
-        <div class="itemContent contentShow">
-            <div class="treeItem">
-                <div id="zd000001" count=0 class="itemTitle titleShow sensorItem" real="true" sensorId="1">振动测点1</div>
+<div id="mTree" domain="mechanism" class="monitorForcast">
 
+    <div class="treeItem">
+        <div class="itemTitle titleShow">减速机</div>
+        <div class="itemConten contentShow">
+            <div class="treeItem">
+                <div class="itemTitle titleShow">振动监测</div>
+                <div class="itemContent contentShow">
+                    <div id="zd000001" count=0 class="bullet sensorItem" real="true" sensorId="1">高速轴外侧X向振动监测</div>
+                    <div id="zd000002" count=0 class="bullet sensorItem" real="true" sensorId="2">高速轴外侧Y向振动监测</div>
+                    <div id="zd000003" count=0 class="bullet sensorItem" real="true" sensorId="3">高速轴外侧Z向振动监测</div>
+                    <div id="zd000004" count=0 class="bullet sensorItem" real="true" sensorId="4">高速轴内侧键相传感器</div>
+                </div>
             </div>
             <div class="treeItem">
-                <div id="zd000002" count=0 class="itemTitle sensorItem" real="true" sensorId="2">振动测点2</div>
-
+                <div class="itemTitle titleShow">温度监测</div>
+                <div class="itemContent contentShow">
+                    <div id="wd000001" count=100 class="bullet sensorItem" real="true" sensorId="5">高速轴轴承外侧温度传感器</div>
+                </div>
             </div>
         </div>
     </div>
-    <div class="treeItem" scope="zhidongqi">
-        <div class="itemTitle titleShow">制动器#001</div>
+    <div class="treeItem">
+        <div class="itemTitle titleShow">制动器</div>
         <div class="itemContent contentShow">
-            <div class="treeItem">
-                <div id="zl000001" count=100 class="itemTitle sensorItem" real="true" sensorId="3">制动力矩监测</div>
-
-            </div>
+            <div id="zl000001" count=100 class="bullet sensorItem" real="true" sensorId="6">行程帽行程位移监测</div>
         </div>
     </div>
-    <div class="treeItem" scope="bijia">
-        <div class="itemTitle titleShow">主臂架</div>
+
+    <div class="treeItem">
+        <div class="itemTitle titleShow">桥架</div>
         <div class="itemContent contentShow">
             <div class="treeItem">
-                <div id="yl000001" count=100 class="itemTitle sensorItem" real="true" sensorId="4">应力监测点1</div>
-
+                <div class="itemTitle titleShow">主梁1跨中底板位置应力监测</div>
+                <div class="itemContent contentShow">
+                    <div id="yl000001" count=100 class="bullet sensorItem" real="true" sensorId="7">应变传感器1#</div>
+                    <div id="yl000002" count=100 class="bullet sensorItem" real="true" sensorId="8">应变传感器1#</div>
+                    <div id="yl000003" count=100 class="bullet sensorItem" real="true" sensorId="9">应变传感器1#</div>
+                    <div id="yl000004" count=100 class="bullet sensorItem" real="true" sensorId="10">应变传感器1#</div>
+                    <div id="yl000005" count=100 class="bullet sensorItem" real="true" sensorId="11">应变传感器1#</div>
+                    <div id="yl000006" count=100 class="bullet sensorItem" real="true" sensorId="12">应变传感器1#</div>
+                    <div id="yl000007" count=100 class="bullet sensorItem" real="true" sensorId="13">应变传感器1#</div>
+                    <div id="yl000008" count=100 class="bullet sensorItem" real="true" sensorId="14">应变传感器1#</div>
+                    <div id="yl000009" count=100 class="bullet sensorItem" real="true" sensorId="15">应变传感器1#</div>
+                </div>
             </div>
             <div class="treeItem">
-                <div id="yl000002" count=100 class="itemTitle sensorItem" real="true" sensorId="5">应力监测点2</div>
+                <div class="itemTitle">主梁2跨中底板位置应力监测</div>
+                <div class="itemContent">
+                    <div id="yl000011" count=100 class="bullet sensorItem" real="true" sensorId="16">应变传感器1#</div>
+                    <div id="yl000012" count=100 class="bullet sensorItem" real="true" sensorId="17">应变传感器1#</div>
+                    <div id="yl000013" count=100 class="bullet sensorItem" real="true" sensorId="18">应变传感器1#</div>
+                    <div id="yl000014" count=100 class="bullet sensorItem" real="true" sensorId="19">应变传感器1#</div>
+                    <div id="yl000015" count=100 class="bullet sensorItem" real="true" sensorId="20">应变传感器1#</div>
+                    <div id="yl000016" count=100 class="bullet sensorItem" real="true" sensorId="21">应变传感器1#</div>
+                    <div id="yl000017" count=100 class="bullet sensorItem" real="true" sensorId="22">应变传感器1#</div>
+                    <div id="yl000018" count=100 class="bullet sensorItem" real="true" sensorId="23">应变传感器1#</div>
+                    <div id="yl000019" count=100 class="bullet sensorItem" real="true" sensorId="24">应变传感器1#</div>
+                </div>
+            </div>
 
+            <div class="treeItem">
+                <div class="itemTitle">主梁1的1/4跨底板位置应力监测</div>
+                <div class="itemContent">
+                    <div id="yl000021" count=100 class="bullet sensorItem" real="true" sensorId="25">应变传感器1#</div>
+                    <div id="yl000022" count=100 class="bullet sensorItem" real="true" sensorId="26">应变传感器1#</div>
+                    <div id="yl000033" count=100 class="bullet sensorItem" real="true" sensorId="27">应变传感器1#</div>
+                    <div id="yl000034" count=100 class="bullet sensorItem" real="true" sensorId="28">应变传感器1#</div>
+                    <div id="yl000035" count=100 class="bullet sensorItem" real="true" sensorId="29">应变传感器1#</div>
+                    <div id="yl000036" count=100 class="bullet sensorItem" real="true" sensorId="30">应变传感器1#</div>
+                    <div id="yl000037" count=100 class="bullet sensorItem" real="true" sensorId="31">应变传感器1#</div>
+                    <div id="yl000038" count=100 class="bullet sensorItem" real="true" sensorId="32">应变传感器1#</div>
+                    <div id="yl000039" count=100 class="bullet sensorItem" real="true" sensorId="33">应变传感器1#</div>
+                </div>
+            </div>
+            <div class="treeItem">
+                <div class="itemTitle">主梁2的1/4跨底板位置应力监测</div>
+                <div class="itemContent">
+                    <div id="yl000041" count=100 class="bullet sensorItem" real="true" sensorId="34">应变传感器1#</div>
+                    <div id="yl000042" count=100 class="bullet sensorItem" real="true" sensorId="35">应变传感器1#</div>
+                    <div id="yl000043" count=100 class="bullet sensorItem" real="true" sensorId="36">应变传感器1#</div>
+                    <div id="yl000044" count=100 class="bullet sensorItem" real="true" sensorId="37">应变传感器1#</div>
+                    <div id="yl000045" count=100 class="bullet sensorItem" real="true" sensorId="38">应变传感器1#</div>
+                    <div id="yl000046" count=100 class="bullet sensorItem" real="true" sensorId="39">应变传感器1#</div>
+                    <div id="yl000047" count=100 class="bullet sensorItem" real="true" sensorId="40">应变传感器1#</div>
+                    <div id="yl000048" count=100 class="bullet sensorItem" real="true" sensorId="41">应变传感器1#</div>
+                    <div id="yl000049" count=100 class="bullet sensorItem" real="true" sensorId="42">应变传感器1#</div>
+                </div>
+            </div>
+
+            <div class="treeItem">
+                <div class="itemTitle">主梁1与端梁1的相接处#应力监测</div>
+                <div class="itemContent">
+                    <div id="yl000051" count=100 class="bullet sensorItem" real="true" sensorId="43">应变传感器1#</div>
+                    <div id="yl000052" count=100 class="bullet sensorItem" real="true" sensorId="44">应变传感器1#</div>
+                    <div id="yl000053" count=100 class="bullet sensorItem" real="true" sensorId="45">应变传感器1#</div>
+                    <div id="yl000054" count=100 class="bullet sensorItem" real="true" sensorId="46">应变传感器1#</div>
+                    <div id="yl000055" count=100 class="bullet sensorItem" real="true" sensorId="47">应变传感器1#</div>
+                    <div id="yl000056" count=100 class="bullet sensorItem" real="true" sensorId="48">应变传感器1#</div>
+                    <div id="yl000057" count=100 class="bullet sensorItem" real="true" sensorId="49">应变传感器1#</div>
+                    <div id="yl000058" count=100 class="bullet sensorItem" real="true" sensorId="50">应变传感器1#</div>
+                </div>
+            </div>
+            <div class="treeItem">
+                <div class="itemTitle">主梁1与端梁2的相接处#应力监测</div>
+                <div class="itemContent">
+                    <div id="yl000061" count=100 class="bullet sensorItem" real="true" sensorId="51">应变传感器1#</div>
+                    <div id="yl000062" count=100 class="bullet sensorItem" real="true" sensorId="52">应变传感器1#</div>
+                    <div id="yl000063" count=100 class="bullet sensorItem" real="true" sensorId="53">应变传感器1#</div>
+                    <div id="yl000064" count=100 class="bullet sensorItem" real="true" sensorId="54">应变传感器1#</div>
+                    <div id="yl000065" count=100 class="bullet sensorItem" real="true" sensorId="55">应变传感器1#</div>
+                    <div id="yl000066" count=100 class="bullet sensorItem" real="true" sensorId="56">应变传感器1#</div>
+                    <div id="yl000067" count=100 class="bullet sensorItem" real="true" sensorId="57">应变传感器1#</div>
+                    <div id="yl000068" count=100 class="bullet sensorItem" real="true" sensorId="58">应变传感器1#</div>
+                </div>
+            </div>
+
+            <div class="treeItem">
+                <div class="itemTitle">主梁2与端梁1的相接处#应力监测</div>
+                <div class="itemContent">
+                    <div id="yl000071" count=100 class="bullet sensorItem" real="true" sensorId="59">应变传感器1#</div>
+                    <div id="yl000072" count=100 class="bullet sensorItem" real="true" sensorId="61">应变传感器1#</div>
+                    <div id="yl000073" count=100 class="bullet sensorItem" real="true" sensorId="62">应变传感器1#</div>
+                    <div id="yl000074" count=100 class="bullet sensorItem" real="true" sensorId="63">应变传感器1#</div>
+                    <div id="yl000075" count=100 class="bullet sensorItem" real="true" sensorId="64">应变传感器1#</div>
+                    <div id="yl000076" count=100 class="bullet sensorItem" real="true" sensorId="65">应变传感器1#</div>
+                    <div id="yl000077" count=100 class="bullet sensorItem" real="true" sensorId="66">应变传感器1#</div>
+                    <div id="yl000078" count=100 class="bullet sensorItem" real="true" sensorId="67">应变传感器1#</div>
+                </div>
+            </div>
+            <div class="treeItem">
+                <div class="itemTitle">主梁2与端梁2的相接处#应力监测</div>
+                <div class="itemContent">
+                    <div id="yl000081" count=100 class="bullet sensorItem" real="true" sensorId="68">应变传感器1#</div>
+                    <div id="yl000082" count=100 class="bullet sensorItem" real="true" sensorId="69">应变传感器1#</div>
+                    <div id="yl000083" count=100 class="bullet sensorItem" real="true" sensorId="70">应变传感器1#</div>
+                    <div id="yl000084" count=100 class="bullet sensorItem" real="true" sensorId="71">应变传感器1#</div>
+                    <div id="yl000085" count=100 class="bullet sensorItem" real="true" sensorId="72">应变传感器1#</div>
+                    <div id="yl000086" count=100 class="bullet sensorItem" real="true" sensorId="73">应变传感器1#</div>
+                    <div id="yl000087" count=100 class="bullet sensorItem" real="true" sensorId="74">应变传感器1#</div>
+                    <div id="yl000088" count=100 class="bullet sensorItem" real="true" sensorId="75">应变传感器1#</div>
+                </div>
             </div>
         </div>
     </div>

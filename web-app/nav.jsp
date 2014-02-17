@@ -6,24 +6,39 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <link rel="stylesheet" href="styles/head.css" type="text/css">
     <script type="text/javascript" src='js/jquery-1.7.2.min.js'></script>
-    <title>标题</title>
+    <title>上海宝钢70吨桥式起重机健康监测与预报可视化系统</title>
     <% String path = request.getContextPath();
         String basePase = request.getScheme()+"://"+request.getServerName()+":"+request.getServerPort()+path+"/";%>
+
+    <script type="text/javascript">
+        $(document).ready(function(){
+
+            var sys = decodeURI($.getUrlVar("sys"));
+            if(sys != 'undefined' ){
+                $('#mainBodyDiv').load($("#"+sys).attr(url));
+            }else{
+                $('#mainBodyDiv').load($(".mainselected").attr("url"));
+            }
+
+            $('#headTab .tabItem').click(function(){
+               location = $(this).attr("url");
+            });
+        });
+    </script>
 </head>
 <body>
 <div id='titleContainerDiv'>
-    <div id="titleDiv">港口起重机械健康监测与预报可视化系统<span id="devNameDiv"></span></div>
+    <div id="titleDiv">上海宝钢70吨桥式起重机健康监测与预报可视化系统<span id="devNameDiv"></span></div>
 </div>
 
     <div id='mainHeadDiv'>
     	<div id='headTab' class='tabs'>
-		    <div class='tabItem' url="integrateManagement.html">港机信息可视化</div>  
-		    <div class='tabItem' onclick="location.href='/riskreport/'">港机智能点检</div>
-		    <div class='tabItem' url="mechanismForcast/health-forecast.html?devName=门机#01'">机构健康监测</div>
-		    <div class='tabItem ' url="structForcast/health-forecast.html?devName=门机#01'">结构健康监测</div>
-		    <div class='tabItem' url="electricalForcast/health-forecast.html?devName=门机#01'">电气健康监测</div>
-		    <div class='tabItem mainselected' url="health-forecast.html?devName=门机#01'">健康趋势预报</div>
-		    <div class='tabItem' url="risk-management.html?devName=门机#01'">动态风险评估</div>
+            <div id="safetyMonitor" class='tabItem' url="/metallurgy/main.html?sys=safetyMonitor">安全监控系统</div>
+            <div id="mechannismForcast" class='tabItem' url="/metallurgy/main.html?sys=mechannismForcast">机构健康监测</div>
+            <div id="structForcast" class='tabItem ' url="/metallurgy/main.html?sys=structForcast">结构健康监测</div>
+            <div class='tabItem mainselected' url="/riskreport">健康诊断预报</div>
+            <div class='tabItem' url="/inspect">智能点检维修</div>
+            <div id="integrateManagement" class='tabItem' url="/metallurgy/main.html?sys=integrateManagement">安全技术档案</div>
 		 </div>
   	</div>
 

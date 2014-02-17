@@ -64,6 +64,9 @@
             $(".qisheng").click(function(){
                 $("#content").load("qisheng.jsp");
             })
+            $(".qiaojia").click(function(){
+                $("#content").load("qiaojia.jsp");
+            })
             $(".bianfu").click(function(){
                 $("#content").load("bianfu.jsp");
             })
@@ -89,32 +92,11 @@
 <ul>
     <li>健康实时预报
         <ul>
-            <li>主要结构
-                <ul>
-                    <li class="menjiali">门架机构
-                    </li>
-            <li class="bijia">臂架系统
-            </li>
-            <li class="shangzhuanzhuli">上转柱
-            </li>
-            <li>平衡系统
-            </li>
-            <li>转台总成</li>
+            <li class="qisheng">起升机构</li>
+            <li class="qiaojia">桥架</li>
+
         </ul>
     </li>
-    <li>主要机构
-        <ul>
-            <li class="qisheng">起升机构
-            </li>
-            <li class="huizhuan">回转机构
-            </li>
-            <li>行走机构
-            </li>
-            <li class="bianfu">变幅机构
-            </li>
-        </ul>
-    </li>
-</ul>
 <li class="reportList">健康诊断报告</li>
 <li class="zhengdong">减速机振动信号分析</li>
 </ul>

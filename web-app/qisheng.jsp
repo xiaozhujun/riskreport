@@ -16,47 +16,16 @@
 <div id="main">
     <div class="title"><span class="title-font">机构/结构:起升机构</span></div>
     <div class="theader"><span class="item">监测对象</span><span class="item1">监测点</span><span class="item2">结果状态</span></div>
-    <div class="menjia"><span class="menjia-item1">
-        <span class="t3">
-           1.1制动器X4
-        </span>
-        <span class="t2">
-           1.2驱动主电机X2
-        </span>
-        <span class="t3">
-              1.3减速机X2
-        </span>
-        <span class="t4">
-             1.4钢丝绳
-        </span>
-        </span>
+    <div class="menjia">
         <span class="menjia-item2">
-         <span class="t1">行程帽1</span>
-           <span class="t1">行程帽2</span>
-           <span class="t1">行程帽3 </span>
-           <span class="t1">行程帽4</span>
-            <span class="t1">输出端XYZ(振动)</span>
-            <span class="t1">高速轴外侧XYZ</span>
-           <span class="t1">电机地脚1内侧YZ</span>
-           <span class="t1">低速轴外侧XYZ   </span>
-           <span class="t1">减速机高速轴上油封 </span>
-            <span class="t1">卷筒支撑轴承XYZ</span>
-            <span class="t1">卷筒支撑轴承XYZ</span>
-            <span class="t1">S轮1</span>
-           <span class="t1">S轮2</span>
-           <span class="t1">S轮3</span>
-           <span class="t1">S轮4</span>
+         <span class="t1">高速轴外侧X向振动监测</span>
+           <span class="t1">高速轴外侧Y向振动监测</span>
+           <span class="t1">高速轴外侧Z向振动监测 </span>
+           <span class="t1">高速轴内侧键相传感器</span>
+            <span class="t1">高速轴轴承外侧温度传感器</span>
+            <span class="t1">行程帽行程位移监测</span>
          </span>
            <span class="menjia-item3">
-           <span class="t2"><span class="btn">正常</span></span>
-           <span class="t2"><span class="btn">正常</span></span>
-           <span class="t2"><span class="btn">正常</span></span>
-           <span class="t2"><span class="btn">正常</span></span>
-           <span class="t2"><span class="btn">正常</span></span>
-           <span class="t2"><span class="btn">正常</span></span>
-           <span class="t2"><span class="btn">正常</span></span>
-           <span class="t2"><span class="btn1">异常</span></span>
-           <span class="t2"><span class="btn">正常</span></span>
            <span class="t2"><span class="btn">正常</span></span>
            <span class="t2"><span class="btn">正常</span></span>
            <span class="t2"><span class="btn">正常</span></span>

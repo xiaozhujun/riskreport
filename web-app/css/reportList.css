@@ -1,0 +1,22 @@
+.reportListDiv{
+    width:100%;
+    float: left;
+}
+
+.reportItemDiv{
+    width:300px;
+    float:left;
+    border: solid 1px;
+    cursor: pointer;
+    margin-top: 5px;
+    margin-left: 5px;
+}
+
+.reportIconDiv{
+    width: 100%;
+}
+
+.reportTitleDiv{
+   width:100% ;
+   text-align: center;
+}

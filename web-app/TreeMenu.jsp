@@ -70,8 +70,13 @@
             $(".huizhuan").click(function(){
                 $("#content").load("huizhuan.jsp");
             })
+            <!--
             $(".generatereport").click(function(){
                 $("#content").load("reportHtml.jsp");
+            })
+            -->
+            $(".reportList").click(function(){
+                $("#content").load("reportList.jsp");
             })
             $(".zhengdong").click(function(){
                 $("#content").load("main/zhengdongfenxi.html");
@@ -110,7 +115,7 @@
         </ul>
     </li>
 </ul>
-<li class="generatereport">生成报告</li>
+<li class="reportList">健康诊断报告</li>
 <li class="zhengdong">减速机振动信号分析</li>
 </ul>
 </body>

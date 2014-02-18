@@ -84,13 +84,14 @@
             $(".zhengdong").click(function(){
                 $("#content").load("main/zhengdongfenxi.html");
             });
-            $(".zhengdong").trigger("click");
+            $(".qisheng").trigger("click");
+            $("#realReport").trigger("click");
         });
     </script>
 </head>
 <body>
 <ul>
-    <li>健康实时预报
+    <li id="realReport">健康实时预报
         <ul>
             <li class="qisheng">起升机构</li>
             <li class="qiaojia">桥架</li>

@@ -6,7 +6,7 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <link rel="stylesheet" href="styles/head.css" type="text/css">
     <script type="text/javascript" src='js/jquery-1.7.2.min.js'></script>
-    <title>起重机健康监测与预报可视化系统</title>
+    <title>港口起重机械健康监测与预报可视化系统</title>
     <% String path = request.getContextPath();
         String basePase = request.getScheme()+"://"+request.getServerName()+":"+request.getServerPort()+path+"/";%>
 
@@ -28,18 +28,17 @@
 </head>
 <body>
 <div id='titleContainerDiv'>
-    <div id="titleDiv">起重机健康监测与预报可视化系统<span id="devNameDiv"></span></div>
+    <div id="titleDiv">港口起重机械健康监测与预报可视化系统<span id="devNameDiv"></span></div>
 </div>
 
     <div id='mainHeadDiv'>
     	<div id='headTab' class='tabs'>
-            <div id="safetyMonitor" class='tabItem' url="/metallurgy/main.html?sys=safetyMonitor">安全监控系统</div>
-            <div id="mechannismForcast" class='tabItem' url="/metallurgy/main.html?sys=mechannismForcast">机构健康监测</div>
-            <div id="structForcast" class='tabItem ' url="/metallurgy/main.html?sys=structForcast">结构健康监测</div>
+            <div id="safetyMonitor" class='tabItem' url="/port/main.html?sys=safetyMonitor">安全监控系统</div>
+            <div id="mechannismForcast" class='tabItem' url="/port/main.html?sys=mechannismForcast">机构健康监测</div>
+            <div id="structForcast" class='tabItem ' url="/port/main.html?sys=structForcast">结构健康监测</div>
             <div class='tabItem mainselected' url="/riskreportPort">健康诊断预报</div>
             <div class='tabItem' url="/inspectPort">智能点检维修</div>
-            <div id="integrateManagement" class='tabItem' url="/metallurgy/main.html?sys=integrateManagement">安全技术档案</div>
-		 </div>                                             j
+            <div id="integrateManagement" class='tabItem' url="/port/main.html?sys=integrateManagement">安全技术档案</div>
   	</div>
 
 </body>

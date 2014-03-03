@@ -6,7 +6,7 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <link rel="stylesheet" href="styles/head.css" type="text/css">
     <script type="text/javascript" src='js/jquery-1.7.2.min.js'></script>
-    <title>上海宝钢70吨桥式起重机健康监测与预报可视化系统</title>
+    <title>武钢450吨桥式起重机健康监测与预报可视化系统</title>
     <% String path = request.getContextPath();
         String basePase = request.getScheme()+"://"+request.getServerName()+":"+request.getServerPort()+path+"/";%>
 
@@ -28,7 +28,7 @@
 </head>
 <body>
 <div id='titleContainerDiv'>
-    <div id="titleDiv">上海宝钢70吨桥式起重机健康监测与预报可视化系统<span id="devNameDiv"></span></div>
+    <div id="titleDiv">武钢450吨桥式起重机健康监测与预报可视化系统<span id="devNameDiv"></span></div>
 </div>
 
     <div id='mainHeadDiv'>

@@ -14,14 +14,12 @@
     <span class="title-font">健康诊断报告</span>
 </div>
 <div  class="reportListDiv">
-    <a href="/riskreport/safetyReport/healthReport.pdf" target="_blank">
+    <a href="safetyReport/healthReport.pdf" target="_blank">
         <div class="reportItemDiv">
-           <div class="reportIconDiv"><img src="images/report/reportIcon.jpg" width="300"></div>
+           <div class="reportIconDiv"><img src="images/report/reportIcon.png" width="300"></div>
            <div class="reportTitleDiv">健康诊断报告20140217</div>
         </div>
     </a>
 </div>
-
-
 </body>
 </html>

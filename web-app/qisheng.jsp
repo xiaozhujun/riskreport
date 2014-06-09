@@ -20,16 +20,8 @@
         <span class="menjia-item2">
          <span class="t1">高速轴外侧X向振动监测</span>
            <span class="t1">高速轴外侧Y向振动监测</span>
-           <span class="t1">高速轴外侧Z向振动监测 </span>
-           <span class="t1">高速轴内侧键相传感器</span>
-            <span class="t1">高速轴轴承外侧温度传感器</span>
-            <span class="t1">行程帽行程位移监测</span>
          </span>
            <span class="menjia-item3">
-           <span class="t2"><span class="btn">正常</span></span>
-           <span class="t2"><span class="btn">正常</span></span>
-           <span class="t2"><span class="btn">正常</span></span>
-           <span class="t2"><span class="btn1">异常</span></span>
            <span class="t2"><span class="btn">正常</span></span>
            <span class="t2"><span class="btn">正常</span></span>
            </span></div>

@@ -18,14 +18,12 @@
     <div class="theader"><span class="item">监测对象</span><span class="item1">监测点</span><span class="item2">结果状态</span></div>
     <div class="menjia">
         <span class="menjia-item2">
-         <span class="t1">主梁1跨中底板位置应力监测</span>
-           <span class="t1">主梁2跨中底板位置应力监测</span>
-           <span class="t1">主梁1的1/4跨底板位置应力监测 </span>
-           <span class="t1">主梁2的1/4跨底板位置应力监测</span>
-            <span class="t1">主梁1与端梁1的相接处#应力监测</span>
-            <span class="t1">主梁1与端梁2的相接处#应力监测</span>
-           <span class="t1">主梁2与端梁1的相接处#应力监测</span>
-           <span class="t1">主梁2与端梁2的相接处#应力监测</span>
+         <span class="t1">刚性支腿纵上应力监测</span>
+           <span class="t1">刚性支腿纵下应力监测</span>
+           <span class="t1">东梁上盖板0/4处应力监测</span>
+           <span class="t1">东梁上盖板温补处应力监测</span>
+            <span class="t1">西梁上盖板1/4处应力监测</span>
+            <span class="t1">西梁上盖板2/4处应力监测</span>
          </span>
          <span class="menjia-item3">
            <span class="t2"><span class="btn">正常</span></span>
@@ -34,8 +32,6 @@
            <span class="t2"><span class="btn">正常</span></span>
            <span class="t2"><span class="btn">正常</span></span>
            <span class="t2"><span class="btn">正常</span></span>
-           <span class="t2"><span class="btn">正常</span></span>
-           <span class="t2"><span class="btn1">异常</span></span>
            </span>
         </div>
 </div>

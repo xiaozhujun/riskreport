@@ -95,11 +95,10 @@
         <ul>
             <li class="qisheng">起升机构</li>
             <li class="qiaojia">桥架</li>
-
         </ul>
     </li>
-<li class="reportList">健康诊断报告</li>
-<li class="zhengdong">减速机振动信号分析</li>
+<li class="reportList">健康诊断报告</li><%--
+<li class="zhengdong">减速机振动信号分析</li>--%>
 </ul>
 </body>
 </html>

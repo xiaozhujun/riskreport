@@ -10,7 +10,7 @@
 <head>
     <title>首页</title>
     <script src="js/changeColor.js"></script>
-    <script src="/main/js/getParam.js"></script>
+    <script src="js/getParam.js"></script>
      <link rel="stylesheet" href="css/table.css">
 </head>
 <body onload="blinkit()">

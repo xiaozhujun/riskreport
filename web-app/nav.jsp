@@ -7,8 +7,6 @@
     <link rel="stylesheet" href="styles/head.css" type="text/css">
     <script type="text/javascript" src='js/jquery-1.7.2.min.js'></script>
     <title>起重机械健康监测与预报可视化系统</title>
-    <% String path = request.getContextPath();
-        String basePase = request.getScheme()+"://"+request.getServerName()+":"+request.getServerPort()+path+"/";%>
 
     <script type="text/javascript">
         $(document).ready(function(){

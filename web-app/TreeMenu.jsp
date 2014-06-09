@@ -94,7 +94,7 @@
     <li id="realReport">健康实时预报
         <ul>
             <li class="qisheng">起升机构</li>
-            <li class="qiaojia">桥架</li>
+            <li class="qiaojia">结构</li>
         </ul>
     </li>
 <li class="reportList">健康诊断报告</li><%--

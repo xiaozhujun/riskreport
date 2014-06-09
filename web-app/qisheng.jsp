@@ -18,8 +18,8 @@
     <div class="theader"><span class="item">监测对象</span><span class="item1">监测点</span><span class="item2">结果状态</span></div>
     <div class="menjia">
         <span class="menjia-item2">
-         <span class="t1">高速轴外侧X向振动监测</span>
-           <span class="t1">高速轴外侧Y向振动监测</span>
+         <span class="t1">减速机高速轴外侧X向振动监测</span>
+           <span class="t1">减速机高速轴外侧Y向振动监测</span>
          </span>
            <span class="menjia-item3">
            <span class="t2"><span class="btn">正常</span></span>

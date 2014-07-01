@@ -84,21 +84,30 @@
             $(".zhengdong").click(function(){
                 $("#content").load("main/zhengdongfenxi.html");
             });
+            $(".qiaojia").trigger("click");
             $(".qisheng").trigger("click");
-            $("#realReport").trigger("click");
         });
     </script>
 </head>
 <body>
 <ul>
-    <li id="realReport">健康实时预报
+    <li id="qishengReport" class="qisheng">机构健康预报
         <ul>
-            <li class="qisheng">起升机构</li>
-            <li class="qiaojia">结构</li>
+            <li>减速机高速轴外侧X向振动监测</li>
+            <li>减速机高速轴外侧Y向振动监测</li>
         </ul>
     </li>
-<li class="reportList">健康诊断报告</li><%--
-<li class="zhengdong">减速机振动信号分析</li>--%>
+    <li id="qiaojiaReport"class="qiaojia">结构健康预报
+        <ul>
+            <li>刚性支腿纵上应力监测</li>
+            <li>刚性支腿纵下应力监测</li>
+            <li>东梁上盖板0/4处应力监测</li>
+            <li>东梁上盖板温补处应力监测</li>
+            <li>西梁上盖板1/4处应力监测</li>
+            <li>西梁上盖板2/4处应力监测</li>
+        </ul>
+    </li>
+<li class="reportList">健康诊断报告</li>
 </ul>
 </body>
 </html>

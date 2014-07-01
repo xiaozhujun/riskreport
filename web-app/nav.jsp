@@ -26,7 +26,7 @@
 </head>
 <body>
 <div id='titleContainerDiv'>
-    <div id="titleDiv">起重机械健康监测与预报可视化系统<span id="devNameDiv"></span></div>
+    <div id="titleDiv">起重机械健康监测与预报可视化系统<span id="devNameDiv" style="display: none;"></span></div>
 </div>
 
     <div id='mainHeadDiv'>
